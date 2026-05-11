@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <div
+    <section
       id="header"
       className="bg-[url(../../src/assets/images/layout/decore.png)] h-[500px] bg-contain bg-no-repeat bg-right min-h-screen"
     >
@@ -14,7 +14,7 @@ const Header = () => {
           alt="traveller"
         />
         <img
-          className="absolute right-[42%] top-[10%] w-auto h-auto"
+          className="absolute right-[43%] top-[10%] w-auto h-auto"
           src="../../src/assets/images/layout/plane.png"
           alt="travplaneller"
         />
@@ -50,7 +50,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Header;

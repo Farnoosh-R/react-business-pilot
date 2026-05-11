@@ -1,0 +1,150 @@
+import { useState } from "react";
+import { FaArrowRight } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
+import MenuItem from "./MenuItem.jsx";
+import { Link } from "react-router-dom";
+
+const menuData = [
+  {
+    label: "صفحه اصلی",
+    path: "/",
+  },
+    {
+    label: "درباره ما",
+    path: "/about",
+  },
+  {
+    label: "تماس با ما",
+    path: "/contact",
+  },
+    {
+    label: "رزرو ها",
+    path: "bookings",
+  },
+    {
+    label: "پرواز ها",
+    path: "flights",
+  },
+    {
+    label: "اقامت",
+    children: [
+        {
+            label: 'هتل ها',
+            path: 'hotels'
+        },
+               {
+            label: 'ویلا و اقامتگاه',
+            path: 'villas and residences'
+        }
+    ]
+  },
+      {
+    label: 'تورهای خارجی',
+    children: [
+        {
+            label: 'تورهای اروپایی',
+            children: [
+                {
+                    label: 'تور انگلیس',
+                    path: 'england'
+                },
+                {
+                    label: 'تور ترکیه',
+                    path: 'turkish'
+                },
+                {
+                    label: 'تور اسپانیا',
+                    path: 'espain'
+                }
+            ]
+        },
+               {
+            label: 'تورهای خاورمیانه',
+            children: [
+                {
+                    label: 'تور امارات',
+                    path: 'emirates'
+                },
+                {
+                    label: 'تور کشتی کروز خلیج فارس',
+                    path: 'persian gulf cruise ship'
+                }
+                ,
+                 {
+                    label: 'تور عمان',
+                    path: 'oman'
+                },
+                 {
+                    label: 'تور قطر',
+                    path: 'qatar'
+                }
+            ]
+        },
+              {
+            label: 'تورهای آمریکا',
+            path: 'america'
+        }
+    ]
+  },
+
+
+];
+
+const Navbar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  return (
+    <nav className="absolute top-0 left-0 w-full z-50 flex items-center justify-betwee h-[80px] bg-transparent">
+
+           {/* Right Side */}
+      <div className="flex container items-center gap-4">
+
+        <button className="flex items-center gap-2 border px-4 py-2 rounded">
+            <FaArrowRight />
+          ثبت نام
+          
+        </button>
+
+      {/* Menu */}
+      <div
+        className={`
+          absolute lg:static
+          top-full left-0
+          w-full lg:w-auto
+          transition-all duration-500
+          ${mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
+        `}
+      >
+        <ul className="flex flex-col lg:flex-row gap-2 lg:gap-6 p-4 lg:p-0">
+          {menuData.map((item) => (
+            <MenuItem
+              key={item.label}
+              item={item}
+            />
+          ))}
+        </ul>
+      </div>
+
+      {/* Logo */}
+      <Link
+        href="/"
+      >
+        <img src="../../../../../src/assets/images/logo.png" className="w-25"/>
+      </Link>
+
+ 
+
+        {/* Hamburger */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="lg:hidden text-2xl"
+        >
+          <GiHamburgerMenu />
+        </button>
+
+      </div>
+    </nav>
+  );
+};
+
+export default Navbar;

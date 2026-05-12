@@ -1,8 +1,11 @@
+import { DotDecoration } from "../shared/decoration/DotDecoration";
 import { SquareDecoration } from "../shared/decoration/SquareDecoration";
+import SquareDecorationBig from "../shared/decoration/SquareDecorationBig";
 
 const Category = () => {
   return (
-    <section id="#category">
+    <section id="#category" className="relative">
+      <DotDecoration style={{top: "0px", right: "100px"}}/>
       <div className="container flex flex-col gap-5 text-center">
         <h6 className="text-[var(--text-secondary)]">دسته بندی ها</h6>
         <h2>ما بهترین خدمات را ارائه می‌دهیم</h2>
@@ -13,41 +16,56 @@ const Category = () => {
               src="../../src/assets/images/layout/gear.png"
               alt=""
             />
-            <SquareDecoration style={{ top: "30px", right: "0px" }} />
+            <SquareDecoration style={{ top: "30px", right: "60px" }} />
             <div className="flex flex-col gap-4 mt-10">
               <h6>سفارشی سازی</h6>
               <div>
-                ما خدمات هوانوردی برون‌سپاری شده را برای مشتریان نظامی ارائه
-                می‌دهیم
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
               </div>
             </div>
           </div>
-          <div className="relative flex flex-col gap-4 items-center">
+          <div className="relative flex flex-col gap-4 w-50 items-center">
             <img
               className="w-auto h-auto"
               src="../../src/assets/images/layout/mic.png"
               alt=""
             />
-            <SquareDecoration style={{ top: "-10px", right: "10px" }} />
-            <h6>سفارشی سازی</h6>
+            <SquareDecoration style={{ top: "-10px", right: "60px" }} />
+                  <div className="flex flex-col gap-4 mt-10">
+              <h6>رویدادهای محلی</h6>
+              <div>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+              </div>
+            </div>
           </div>
-          <div className="relative flex flex-col gap-4 items-center">
+          <div className="relative flex flex-col md:w-70 gap-4 items-center shadow-brand rounded-4xl p-10 z-10">
             <img
               className="w-auto h-auto"
               src="../../src/assets/images/layout/plane.png"
               alt=""
             />
-            <SquareDecoration style={{ top: "-10px", right: "40px" }} />
-            <h6>سفارشی سازی</h6>
+            <SquareDecoration style={{ top: "35px", right: "120px" }} />
+                  <div className="flex flex-col gap-4 mt-10">
+              <h6>بهترین پروازها</h6>
+              <div>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+              </div>
+            </div>
+            <SquareDecorationBig style={{ bottom: "-30px", left: "-25px" }}/>
           </div>
-          <div className="relative flex flex-col gap-4 items-center">
+          <div className="relative flex flex-col w-50 gap-4 items-center">
             <img
               className="w-auto h-auto"
               src="../../src/assets/images/layout/satellite-dish.png"
               alt=""
             />
-            <SquareDecoration style={{ top: "30px", right: "-10px" }} />
-            <h6>سفارشی سازی</h6>
+            <SquareDecoration style={{ top: "30px", right: "60px" }} />
+                  <div className="flex flex-col gap-4 mt-10">
+              <h6>پیش بینی آب و هوا</h6>
+              <div>
+               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+              </div>
+            </div>
           </div>
         </div>
       </div>

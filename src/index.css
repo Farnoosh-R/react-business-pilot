@@ -54,6 +54,7 @@
     --brand-secondary-hover: #dd9803;
     --brand-accent: #006380;
     --brand-accent-hover: #025169;
+    --brand-glow: #D5AEE4;
     --brand-surface: #fff1da;
 
     /* UI Colors */
@@ -68,9 +69,17 @@
     /* Border */
     /* --border: #e5e7eb; */
 
-    @media (max-width: 1024px) {
-      font-size: 16px;
+    * {
+      transition: all 200ms ease-in-out;
     }
+
+    .shadow-brand {
+      @apply shadow-xl;
+    }
+
+    /* @media (max-width: 1024px) {
+      font-size: 14px;
+    } */
   }
   html {
     direction: rtl;
@@ -80,6 +89,7 @@
     background: var(--bg);
     font-family: "Vazir", sans-serif;
     color: var(--text-primary);
+    font-size: 14px;
   }
   #root {
     /* width: 1400px; */

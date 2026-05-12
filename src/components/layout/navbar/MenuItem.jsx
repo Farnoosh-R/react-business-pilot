@@ -42,7 +42,7 @@ const MenuItem = ({ item, depth = 0 }) => {
 
               bg-white
               border
-              border-[var(--surface)]
+              border-[var(--brand-surface)]
               shadow-xl
               rounded-xl
               min-w-[220px]

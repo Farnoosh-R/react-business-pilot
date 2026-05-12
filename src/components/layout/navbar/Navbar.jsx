@@ -112,6 +112,7 @@ const Navbar = () => {
           top-full left-0
           w-full lg:w-auto
           transition-all duration-500
+          bg-white lg:bg-transparent
           ${mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
       >

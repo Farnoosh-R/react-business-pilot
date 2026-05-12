@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import Navbar from './components/layout/navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import Footer from './components/layout/footer/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home />}/>
     </Routes>
+    <Footer />
     </>
   )
 }

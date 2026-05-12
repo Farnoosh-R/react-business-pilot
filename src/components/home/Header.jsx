@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <section
       id="header"
-      className="bg-[url(../../src/assets/images/layout/decore.png)] h-[500px] bg-contain bg-no-repeat bg-right min-h-screen"
+      className="relative bg-[url(../../src/assets/images/layout/decore.png)] bg-contain bg-[position:top_right] bg-no-repeat min-h-screen"
     >
       <div className="container mt-20 flex flex-col lg:flex-row gap-10">
         <img
@@ -14,7 +14,7 @@ const Header = () => {
           alt="traveller"
         />
         <img
-          className="absolute right-[43%] top-[10%] w-auto h-auto"
+          className="absolute right-[43%] top-[10%] w-auto h-auto hidden lg:block"
           src="../../src/assets/images/layout/plane.png"
           alt="travplaneller"
         />

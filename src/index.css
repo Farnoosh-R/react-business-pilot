@@ -56,6 +56,7 @@
     --brand-accent-hover: #025169;
     --brand-glow: #D5AEE4;
     --brand-surface: #fff1da;
+    --brand-muted: #e6ebf4;
 
     /* UI Colors */
     /* --success: #22c55e;
@@ -74,7 +75,10 @@
     }
 
     .shadow-brand {
-      @apply shadow-xl;
+      @apply shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)];
+    }
+    .page{
+      @apply mt-40;
     }
 
     /* @media (max-width: 1024px) {

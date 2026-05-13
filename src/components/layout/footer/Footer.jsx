@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <section id="footer" className="relative">
-      <div className="container grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr_2fr] mt-52 text-center">
+    <section id="footer" className="relative border-t border-[var(--brand-muted)] mt-20">
+      <div className="container grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr_2fr] py-20 text-center">
         <div className="flex flex-col gap-5 text-center justify-center items-center">
           <div className="flex gap-3 justify-center">
             <div className="w-8 h-8 rounded-full shadow-lg flex items-center justify-center hover:bg-[var(--brand-surface)]">

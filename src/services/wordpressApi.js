@@ -13,3 +13,11 @@ export async function getPostBySlug(slug) {
 
   return res.json();
 }
+
+export async function getLatestPosts() {
+  const res = await fetch(
+    `${API_URL}/posts?per_page=3&_embed`
+  );
+
+  return res.json();
+}

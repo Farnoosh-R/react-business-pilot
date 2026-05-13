@@ -16,7 +16,6 @@ const PostCard = ({ post }) => {
       )}
 
       <div className="flex flex-col p-4 text-[var(--text-secondary)]">
-        {/* <h3 className="">{post.title.rendered}</h3> */}
         <Link to={`/blog/${post.slug}`}>
           <h3>{post.title.rendered}</h3>
         </Link>

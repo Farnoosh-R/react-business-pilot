@@ -54,7 +54,8 @@
     --brand-secondary-hover: #dd9803;
     --brand-accent: #006380;
     --brand-accent-hover: #025169;
-    --brand-glow: #D5AEE4;
+    --brand-glow: #d5aee4;
+    --brand-sky: #59b1e6;
     --brand-surface: #fff1da;
     --brand-muted: #e6ebf4;
 
@@ -77,9 +78,13 @@
     .shadow-brand {
       @apply shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)];
     }
-    .page{
+    .page {
       @apply mt-40;
     }
+    .swiper-pagination-bullet-active {
+      background: var(--brand-primary) !important;
+    }
+
 
     /* @media (max-width: 1024px) {
       font-size: 14px;
@@ -136,8 +141,9 @@
   }
 }
 @layer components {
-  .container {
+  .app-container {
     @apply mx-auto px-4 sm:px-6 lg:px-12;
-    max-width: 1400px;
+    /* max-width: 1400px; */
+    max-width: 85rem;
   }
 }

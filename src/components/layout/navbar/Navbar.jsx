@@ -97,7 +97,7 @@ const Navbar = () => {
     <nav className="absolute top-0 left-0 w-full z-50 flex items-center justify-betwee h-[80px] bg-transparent">
 
            {/* Right Side */}
-      <div className="flex container items-center gap-4">
+      <div className="flex app-container items-center gap-4">
 
         <button className="flex items-center gap-2 border px-4 py-2 rounded">
             <FaArrowRight />

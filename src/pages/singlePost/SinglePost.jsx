@@ -23,7 +23,7 @@ const SinglePost = () => {
 
   return (
     <div id="single-post" className="page">
-      <div className="container">
+      <div className="app-container">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 border-b border-[var(--brand-muted)] pb-7 mb-5">
           <div className="flex flex-col gap-3">
             <h2 className="mb-4">{post.title.rendered}</h2>

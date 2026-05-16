@@ -12,7 +12,7 @@ const Blog = () => {
 
   return (
     <div id="blog" className="page">
-      <div className="container">
+      <div className="app-container">
         <h1 className="mb-5">مقالات</h1>
       <div className="grid grid-cols-1 md:grid-cols-4">
         

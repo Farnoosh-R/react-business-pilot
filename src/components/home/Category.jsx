@@ -6,7 +6,7 @@ const Category = () => {
   return (
     <section id="#category" className="relative">
       <DotDecoration style={{top: "0px", right: "100px"}}/>
-      <div className="container flex flex-col gap-5 text-center">
+      <div className="app-container flex flex-col gap-5 text-center">
         <h6 className="text-[var(--text-secondary)]">دسته بندی ها</h6>
         <h2>ما بهترین خدمات را ارائه می‌دهیم</h2>
         <div className="grid grid-cols-2 lg:grid-cols-4 mt-20 place-items-center">

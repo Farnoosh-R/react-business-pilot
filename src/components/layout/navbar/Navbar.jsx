@@ -3,13 +3,14 @@ import { FaArrowRight } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuItem from "./MenuItem.jsx";
 import { Link } from "react-router-dom";
+import Button from "../../ui/Button/Button.jsx";
 
 const menuData = [
   {
     label: "صفحه اصلی",
     path: "/",
   },
-    {
+  {
     label: "درباره ما",
     path: "/about",
   },
@@ -17,77 +18,74 @@ const menuData = [
     label: "تماس با ما",
     path: "/contact",
   },
-    {
+  {
     label: "رزرو ها",
     path: "bookings",
   },
-    {
+  {
     label: "پرواز ها",
     path: "flights",
   },
-    {
+  {
     label: "اقامت",
     children: [
-        {
-            label: 'هتل ها',
-            path: 'hotels'
-        },
-               {
-            label: 'ویلا و اقامتگاه',
-            path: 'villas and residences'
-        }
-    ]
-  },
       {
-    label: 'تورهای خارجی',
-    children: [
-        {
-            label: 'تورهای اروپایی',
-            children: [
-                {
-                    label: 'تور انگلیس',
-                    path: 'england'
-                },
-                {
-                    label: 'تور ترکیه',
-                    path: 'turkish'
-                },
-                {
-                    label: 'تور اسپانیا',
-                    path: 'espain'
-                }
-            ]
-        },
-               {
-            label: 'تورهای خاورمیانه',
-            children: [
-                {
-                    label: 'تور امارات',
-                    path: 'emirates'
-                },
-                {
-                    label: 'تور کشتی کروز خلیج فارس',
-                    path: 'persian gulf cruise ship'
-                }
-                ,
-                 {
-                    label: 'تور عمان',
-                    path: 'oman'
-                },
-                 {
-                    label: 'تور قطر',
-                    path: 'qatar'
-                }
-            ]
-        },
-              {
-            label: 'تورهای آمریکا',
-            path: 'america'
-        }
-    ]
+        label: "هتل ها",
+        path: "hotels",
+      },
+      {
+        label: "ویلا و اقامتگاه",
+        path: "villas and residences",
+      },
+    ],
   },
-
-
+  {
+    label: "تورهای خارجی",
+    children: [
+      {
+        label: "تورهای اروپایی",
+        children: [
+          {
+            label: "تور انگلیس",
+            path: "england",
+          },
+          {
+            label: "تور ترکیه",
+            path: "turkish",
+          },
+          {
+            label: "تور اسپانیا",
+            path: "espain",
+          },
+        ],
+      },
+      {
+        label: "تورهای خاورمیانه",
+        children: [
+          {
+            label: "تور امارات",
+            path: "emirates",
+          },
+          {
+            label: "تور کشتی کروز خلیج فارس",
+            path: "persian gulf cruise ship",
+          },
+          {
+            label: "تور عمان",
+            path: "oman",
+          },
+          {
+            label: "تور قطر",
+            path: "qatar",
+          },
+        ],
+      },
+      {
+        label: "تورهای آمریکا",
+        path: "america",
+      },
+    ],
+  },
 ];
 
 const Navbar = () => {
@@ -95,19 +93,16 @@ const Navbar = () => {
 
   return (
     <nav className="absolute top-0 left-0 w-full z-50 flex items-center justify-betwee h-[80px] bg-transparent">
-
-           {/* Right Side */}
+      {/* Right Side */}
       <div className="flex app-container items-center gap-4">
-
-        <button className="flex items-center gap-2 border px-4 py-2 rounded">
-            <FaArrowRight />
+        <Button variant="outline">
+          <FaArrowRight />
           ثبت نام
-          
-        </button>
+        </Button>
 
-      {/* Menu */}
-      <div
-        className={`
+        {/* Menu */}
+        <div
+          className={`
           absolute lg:static
           top-full left-0
           w-full lg:w-auto
@@ -115,25 +110,21 @@ const Navbar = () => {
           bg-white lg:bg-transparent
           ${mobileOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
-      >
-        <ul className="flex flex-col lg:flex-row gap-2 lg:gap-6 p-4 lg:p-0">
-          {menuData.map((item) => (
-            <MenuItem
-              key={item.label}
-              item={item}
-            />
-          ))}
-        </ul>
-      </div>
+        >
+          <ul className="flex flex-col lg:flex-row gap-2 lg:gap-6 p-4 lg:p-0">
+            {menuData.map((item) => (
+              <MenuItem key={item.label} item={item} />
+            ))}
+          </ul>
+        </div>
 
-      {/* Logo */}
-      <Link
-        href="/"
-      >
-        <img src="../../../../../src/assets/images/logo.png" className="w-25"/>
-      </Link>
-
- 
+        {/* Logo */}
+        <Link href="/">
+          <img
+            src="../../../../../src/assets/images/logo.png"
+            className="w-25"
+          />
+        </Link>
 
         {/* Hamburger */}
         <button
@@ -142,7 +133,6 @@ const Navbar = () => {
         >
           <GiHamburgerMenu />
         </button>
-
       </div>
     </nav>
   );

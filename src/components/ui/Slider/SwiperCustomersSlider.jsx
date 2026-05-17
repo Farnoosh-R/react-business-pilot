@@ -1,43 +1,40 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Pagination } from "swiper/modules";
-import "swiper/css/pagination";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
 
 export default function SwiperCustomersSlider({ items }) {
   return (
-    <div className="max-w-[800px] mr-auto min-w-0 mr-auto">
+    <div className="">
       <Swiper
         slidesPerView={1}
-        modules={[Pagination]}
-        pagination={{ clickable: true }}
+        modules={[Navigation]}
+        navigation
         breakpoints={{
           320: {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 1,
+            slidesPerView: 3,
           },
           1024: {
-            slidesPerView: 1,
+            slidesPerView: 5,
           },
         }}
         className="relative pb-10"
       >
         {items.map((item) => (
           <SwiperSlide key={item.id}>
-            <div className="relative h-auto">
-              <div className="flex flex-col gap-4">
+            <div className="relative flex justify-center h-auto">
+              {/* <div className="flex flex-col gap-4"> */}
                 <img
                   src={item.image}
                   alt={item.title}
                   className="w-fit object-cove"
                 />
 
-                <p className="mt-4 leading-9 text-justify">
-                  {item.description}
-                </p>
-                <h6>{item.title}</h6>
-              </div>
+        
+              {/* </div> */}
             </div>
           </SwiperSlide>
         ))}

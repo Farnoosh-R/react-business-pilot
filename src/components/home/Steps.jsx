@@ -11,7 +11,7 @@ const Steps = () => {
     <section id="steps">
       <div className="app-container">
         <div className="flex flex-col md:flex-row justify-between">
-          <div>
+          <div className="scroll-anim" style={{ "--from": "translateX(100px)" }}>
             <h6 className="text-[var(--text-secondary)]">چند گام ساده</h6>
             <h2 className="leading-16">سفر بعدی خود را</h2>
             <h2>در ۳ مرحله آسان رزرو کنید</h2>
@@ -54,7 +54,8 @@ const Steps = () => {
               </div>
             </div>
           </div>
-          <div className="relative rounded-3xl border border-[var(--brand-muted)] p-4 bg-white h-fit shadow-brand">
+        <div className="scroll-anim" style={{ "--from": "translateX(-100px)" }}>
+            <div className="relative rounded-3xl border border-[var(--brand-muted)] p-4 !bg-white h-fit shadow-brand">
             <div className="absolute -z-10 -top-5 -left-5 w-50 h-50 bg-[var(--brand-sky)] blur-3xl rounded-tl-full pointer-events-none" />
             <img
               src="../../src/assets/images/layout/steps-traveller.jpg"
@@ -106,6 +107,7 @@ const Steps = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

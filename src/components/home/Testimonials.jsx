@@ -51,7 +51,7 @@ const Testimonials = () => {
               </div>
             </div>
             <img
-              className="opacity-5 scale-x-[-1] -mt-25"
+              className="opacity-5 hidden lg:block scale-x-[-1] -mt-25"
               src="../../src/assets/images/layout/msg.png"
               alt=""
             />

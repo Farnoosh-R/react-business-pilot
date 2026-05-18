@@ -5,7 +5,7 @@ import "swiper/css/pagination";
 
 export default function SwiperSlider({ items }) {
   return (
-    <div className="max-w-[800px] mr-auto min-w-0 mr-auto">
+    <div className="w-full mr-auto min-w-0 mr-auto">
       <Swiper
         slidesPerView={1}
         modules={[Pagination]}

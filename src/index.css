@@ -103,6 +103,7 @@
   }
   html {
     direction: rtl;
+    overflow-x: hidden;
   }
   body {
     margin: 0;

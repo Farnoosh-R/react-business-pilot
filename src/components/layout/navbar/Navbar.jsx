@@ -20,8 +20,8 @@ const menuData = [
     path: "/contact",
   },
   {
-    label: "رزرو ها",
-    path: "bookings",
+    label: "مقالات",
+    path: "/blog",
   },
   {
     label: "پرواز ها",

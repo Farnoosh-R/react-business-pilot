@@ -1,30 +1,35 @@
 import SwiperCustomersSlider from "../ui/Slider/SwiperCustomersSlider";
+import customer1 from "../../../src/assets/images/layout/customer1.png"
+import customer2 from "../../../src/assets/images/layout/customer2.png"
+import customer3 from "../../../src/assets/images/layout/customer3.png"
+import customer4 from "../../../src/assets/images/layout/customer4.png"
+import customer5 from "../../../src/assets/images/layout/customer5.png"
 
 const Customers = () => {
   const slides = [
     {
       id: 1,
-      image: "../../src/assets/images/layout/customer1.png",
+      image: customer1,
     },
     {
       id: 1,
-      image: "../../src/assets/images/layout/customer2.png",
+      image: customer2,
     },
     {
       id: 1,
-      image: "../../src/assets/images/layout/customer3.png",
+      image: customer3,
     },
     {
       id: 1,
-      image: "../../src/assets/images/layout/customer4.png",
+      image: customer4,
     },
     {
       id: 1,
-      image: "../../src/assets/images/layout/customer5.png",
+      image: customer5,
     },
         {
       id: 1,
-      image: "../../src/assets/images/layout/customer5.png",
+      image: customer5,
     },
   ];
   return (

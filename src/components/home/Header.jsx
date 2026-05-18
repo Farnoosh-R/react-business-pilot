@@ -1,22 +1,27 @@
 import Button from "../ui/Button/Button";
 import { FaPlay } from "react-icons/fa";
+import traveller from "../../../src/assets/images/layout/traveller.png"
+import plane from "../../../src/assets/images/layout/plane.png"
+import marker from "../../../src/assets/images/layout/marker.png"
+import decore from "../../../src/assets/images/layout/decore.png"
+
 
 const Header = () => {
   return (
     <section
       id="header"
-      className="relative bg-[url(../../src/assets/images/layout/decore.png)] bg-contain bg-[position:top_right] bg-no-repeat min-h-screen"
+      className="relative bg-contain bg-[position:top_right] bg-no-repeat min-h-screen" style={{ backgroundImage: `url(${decore})` }}
     >
       <div className="app-container mt-20 flex flex-col lg:flex-row gap-10 scroll-anim" style={{ "--from": "scale(0.9)" }}>
         <img
           className="relative"
-          src="../../src/assets/images/layout/traveller.png"
+          src={traveller}
           alt="traveller"
         />
         <img
           className="absolute right-[43%] top-[10%] w-auto h-auto hidden lg:block"
-          src="../../src/assets/images/layout/plane.png"
-          alt="travplaneller"
+          src={plane}
+          alt="plane"
         />
 
         <div className="flex flex-col gap-3 mt-20">
@@ -27,7 +32,7 @@ const Header = () => {
           <div className="flex justify-start -mt-4">
             <img
               className=""
-              src="../../src/assets/images/layout/marker.png"
+              src={marker}
               alt=""
             />
           </div>

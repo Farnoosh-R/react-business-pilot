@@ -5,6 +5,10 @@ import { MdEco } from "react-icons/md";
 import { MdArticle } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdApartment } from "react-icons/md";
+import stepsTraveller from "../../../src/assets/images/layout/steps-traveller.jpg"
+import rome from "../../../src/assets/images/layout/rome.png"
+import progressbar from "../../../src/assets/images/layout/progressbar.png"
+
 
 const Steps = () => {
   return (
@@ -58,7 +62,7 @@ const Steps = () => {
             <div className="relative rounded-3xl border border-[var(--brand-muted)] p-4 !bg-white h-fit shadow-brand">
             <div className="absolute -z-10 -top-5 -left-5 w-50 h-50 bg-[var(--brand-sky)] blur-3xl rounded-tl-full pointer-events-none" />
             <img
-              src="../../src/assets/images/layout/steps-traveller.jpg"
+              src={stepsTraveller}
               alt=""
             />
             <div className="flex flex-col gap-4 mt-5 text-[var(--text-secondary)]">
@@ -87,7 +91,7 @@ const Steps = () => {
               <div className="flex absolute top-50 -left-30 gap-3 bg-white rounded-3xl p-5 shadow-brand">
                 <img
                   className="rounded-full h-fit"
-                  src="../../src/assets/images/layout/rome.png"
+                  src={rome}
                   alt=""
                 />
                 <div className="flex flex-col gap-2">
@@ -99,7 +103,7 @@ const Steps = () => {
                       <div>تکمیل شده</div>
                     </div>
                     <img
-                      src="../../src/assets/images/layout/progressbar.png"
+                      src={progressbar}
                       alt=""
                     />
                 

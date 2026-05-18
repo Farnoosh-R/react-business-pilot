@@ -1,7 +1,10 @@
 import { DotDecoration } from "../shared/decoration/DotDecoration";
 import { SquareDecoration } from "../shared/decoration/SquareDecoration";
 import SquareDecorationBig from "../shared/decoration/SquareDecorationBig";
-
+import gear from "../../../src/assets/images/layout/gear.png"
+import mic from "../../../src/assets/images/layout/mic.png"
+import plane from "../../../src/assets/images/layout/plane.png"
+import satelliteDish from "../../../src/assets/images/layout/satellite-dish.png"
 const Category = () => {
   return (
     <section id="#category" className="relative">
@@ -13,7 +16,7 @@ const Category = () => {
           <div className="relative flex flex-col w-50 items-center scroll-anim" style={{ "--from": "translateX(40px)" }}>
             <img
               className="w-auto h-auto"
-              src="../../src/assets/images/layout/gear.png"
+              src={gear}
               alt=""
             />
             <SquareDecoration style={{ top: "30px", right: "60px" }} />
@@ -27,7 +30,7 @@ const Category = () => {
           <div className="relative flex flex-col gap-4 w-50 items-center scroll-anim" style={{ "--from": "translateX(80px)" }}>
             <img
               className="w-auto h-auto"
-              src="../../src/assets/images/layout/mic.png"
+              src={mic}
               alt=""
             />
             <SquareDecoration style={{ top: "-10px", right: "60px" }} />
@@ -41,7 +44,7 @@ const Category = () => {
           <div className="relative flex flex-col md:w-70 gap-4 items-center shadow-brand rounded-4xl p-10 z-10 scroll-anim" style={{ "--from": "translateX(100px)" }}>
             <img
               className="w-auto h-auto"
-              src="../../src/assets/images/layout/plane.png"
+              src={plane}
               alt=""
             />
             <SquareDecoration style={{ top: "35px", right: "120px" }} />
@@ -56,7 +59,7 @@ const Category = () => {
           <div className="relative flex flex-col w-50 gap-4 items-center scroll-anim" style={{ "--from": "translateX(120px)" }}>
             <img
               className="w-auto h-auto"
-              src="../../src/assets/images/layout/satellite-dish.png"
+              src={satelliteDish}
               alt=""
             />
             <SquareDecoration style={{ top: "30px", right: "60px" }} />

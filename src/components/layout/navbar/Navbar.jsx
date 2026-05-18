@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import MenuItem from "./MenuItem.jsx";
 import { Link } from "react-router-dom";
 import Button from "../../ui/Button/Button.jsx";
+import logo from "../../../../src/assets/images/logo.png"
 
 const menuData = [
   {
@@ -121,7 +122,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/">
           <img
-            src="../../../../../src/assets/images/logo.png"
+            src={logo}
             className="w-25"
           />
         </Link>

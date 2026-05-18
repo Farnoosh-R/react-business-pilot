@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getLatestPosts, getPosts } from "../../services/wordpressApi";
 import PostCard from "../blog/PostCard";
+import decorewhippy from "../../../src/assets/images/layout/decorewhippy.png"
 
 const Articles = () => {
   const [posts, setPosts] = useState([]);
@@ -13,7 +14,7 @@ const Articles = () => {
   return (
     <section id="articles" className="">
       <div className="app-container flex flex-col gap-5 relative">
-        <img src="../../src/assets/images/layout/decorewhippy.png" alt="" className="hidden md:block w-25 absolute right-17 top-40 -z-1"/>
+        <img src={decorewhippy} alt="" className="hidden md:block w-25 absolute right-17 top-40 -z-1"/>
         <div className="text-center">
           <h6 className="text-[var(--text-secondary)]">مقالات</h6>
           <h2>پر بازدیدترین مقالات</h2>

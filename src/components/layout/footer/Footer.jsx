@@ -1,5 +1,8 @@
 import { FaTelegramPlane, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import googlePlay from "../../../../src/assets/images/layout/googlePlay.png"
+import playStore from "../../../../src/assets/images/layout/playStore.png"
+import logo from "../../../../src/assets/images/logo.png"
 
 const Footer = () => {
   return (
@@ -25,8 +28,8 @@ const Footer = () => {
           </div>
           <h6>شروع تجربه‌ای جدید با اپ Flyza</h6>
           <div className="flex gap-2 justify-center">
-            <a href="#"><img src="../../src/assets/images/layout/googlePlay.png" alt="" /></a>
-            <a href="#"><img src="../../src/assets/images/layout/playStore.png" alt="" /></a>
+            <a href="#"><img src={googlePlay} alt="" /></a>
+            <a href="#"><img src={playStore} alt="" /></a>
           </div>
         </div>
         <div className="flex flex-col gap-3">
@@ -68,7 +71,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
           <Link href="/">
             <img
-              src="../../../../../src/assets/images/logo.png"
+              src={logo}
               className="w-25 mx-auto"
             />
           </Link>

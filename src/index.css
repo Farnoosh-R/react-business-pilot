@@ -57,6 +57,7 @@
     --brand-glow: #d5aee4;
     --brand-glow-light: #f9f7ff;
     --brand-sky: #59b1e6;
+    --brand-sky-light: #f1faff;
     --brand-surface: #fff1da;
     --brand-muted: #e6ebf4;
 
@@ -85,7 +86,7 @@
     .swiper-pagination-bullet-active {
       background: var(--brand-primary) !important;
     }
-    /* .scroll-anim {
+    .scroll-anim {
       opacity: 0;
       transform: var(--from);
       transition: all 0.7s ease;
@@ -94,7 +95,7 @@
     .scroll-anim.show {
       opacity: 1;
       transform: translate(0, 0) scale(1);
-    } */
+    }
 
     /* @media (max-width: 1024px) {
       font-size: 14px;

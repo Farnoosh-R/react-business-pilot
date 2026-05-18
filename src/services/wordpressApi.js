@@ -1,4 +1,5 @@
-const API_URL = "http://travel.local/wp-json/wp/v2";
+const API_URL = "http://travel.local/wp-json/wp/v2"; /*for local mode*/
+// const API_URL = "http://farnooshstudio.ir//wp-json/wp/v2";  /* for online mode */
 
 export async function getPosts() {
   const res = await fetch(`${API_URL}/posts?_embed`);

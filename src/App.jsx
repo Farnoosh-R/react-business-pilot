@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Footer from "./components/layout/footer/Footer";
 import Blog from "./pages/blog/Blog";
 import SinglePost from "./pages/singlePost/SinglePost";
+import About from "./pages/About/About";
+import Contact from "./pages/contact/Contact";
 
 
 
@@ -43,6 +45,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/blog/:slug" element={<SinglePost />} />
       </Routes>
       <Footer />

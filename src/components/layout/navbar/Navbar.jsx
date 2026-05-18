@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaArrowRight } from "react-icons/fa6";
+import { FiMap } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuItem from "./MenuItem.jsx";
 import { Link } from "react-router-dom";
@@ -95,9 +95,9 @@ const Navbar = () => {
     <nav className="absolute top-0 left-0 w-full z-50 flex items-center justify-betwee h-[80px] bg-transparent">
       {/* Right Side */}
       <div className="flex app-container items-center gap-4">
-        <Button variant="outline">
-          <FaArrowRight />
-          ثبت نام
+        <Button variant="accent" type="outline">
+          <FiMap style={{marginLeft: "5px"}}/>
+          برنامه‌ریزی سفر
         </Button>
 
         {/* Menu */}
@@ -119,7 +119,7 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <Link href="/">
+        <Link to="/">
           <img
             src="../../../../../src/assets/images/logo.png"
             className="w-25"

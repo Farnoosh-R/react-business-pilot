@@ -11,7 +11,7 @@ const Support = () => {
             <img className="absolute right-0 top-0 opacity-10" src="../../src/assets/images/layout/decorecircles-right.png" alt="" />
             <h2>با پشتیبانی Flyza تنها نیستی</h2>
             <h6>۷ روز هفته، ۲۴ ساعته همراهت هستیم.</h6>
-            <Button variant="pastel">021-24721247</Button>
+            <Button variant="pastel" style={{padding: "20px"}}>021-24721247</Button>
           </div>
           <img className="absolute -right-22 -bottom-19 -z-10 scale-y-[-1]" src="../../src/assets/images/layout/dots.png" alt="" />
         </div>

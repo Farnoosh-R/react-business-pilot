@@ -1,3 +1,4 @@
+import { useScrollAnimation } from "../App";
 import Articles from "../components/home/Articles";
 import Category from "../components/home/Category";
 import Customers from "../components/home/Customers";
@@ -7,6 +8,7 @@ import Support from "../components/home/Support";
 import Testimonials from "../components/home/Testimonials";
 
 const Home = () => {
+    useScrollAnimation();
     return(
         <div id="home" className="flex flex-col gap-20">
             <Header />

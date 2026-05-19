@@ -65,10 +65,11 @@ const Steps = () => {
               src={stepsTraveller}
               alt=""
             />
-            <div className="flex flex-col gap-4 mt-5 text-[var(--text-secondary)]">
-              <h6 className="text-[var(--text-primary)]">تجربه سفر به یونان</h6>
+            <div className="flex flex-col mt-5 text-[var(--text-secondary)]">
+            <div className="flex flex-col gap-4 text-left">
+                <h6 className="text-[var(--text-primary)]">تجربه سفر به یونان</h6>
               <div>14-29 June | by Robbin joseph</div>
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-end">
                 <div className="bg-[var(--brand-muted)] p-2 rounded-full">
                   <FaTelegramPlane />
                 </div>
@@ -79,7 +80,7 @@ const Steps = () => {
                   <MdEco />
                 </div>
               </div>
-              <div className="flex gap-2 items-center">
+              <div className="flex justify-end gap-2 items-center">
                 <div>
                   <MdApartment
                     size={20}
@@ -88,7 +89,8 @@ const Steps = () => {
                 </div>
                 <div>24 نفر سفر کرده اند</div>
               </div>
-              <div className="flex absolute top-50 -left-30 gap-3 bg-white rounded-3xl p-5 shadow-brand hidden lg:block">
+            </div>
+              <div className="flex absolute top-50 -right-30 gap-3 bg-white rounded-3xl p-5 shadow-brand hidden md:flex">
                 <img
                   className="rounded-full h-fit"
                   src={rome}

@@ -38,7 +38,7 @@ const Contact = () => {
                   <div>021-247</div>
                 </div>
               </div>
-                    <div className="flex flex-col gap-4 lg:flex-row  text-center items-center">
+                    <div className="flex gap-4 text-center items-center">
                 <div className="flex flex-col gap-3 w-50 rounded-3xl p-7 border border-[var(--brand-muted)] bg-white hover:bg-[var(--brand-sky-light)]">
                   <div className="flex justify-center">
                     <FiClock

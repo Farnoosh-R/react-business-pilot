@@ -103,7 +103,7 @@
   }
   html {
     direction: rtl;
-    overflow-x: hidden;
+    overflow-x: hidden!important;
   }
   body {
     margin: 0;
@@ -111,6 +111,7 @@
     font-family: "Vazir", sans-serif;
     color: var(--text-primary);
     font-size: 14px;
+    overflow-x: hidden!important;
   }
   #root {
     /* width: 1400px; */

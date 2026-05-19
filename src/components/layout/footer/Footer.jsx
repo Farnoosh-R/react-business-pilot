@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <section id="footer" className="relative border-t border-[var(--brand-muted)] mt-20">
       <div className="app-container grid grid-cols-2 md:grid-cols-[2fr_1fr_1fr_1fr_2fr] py-20 text-center">
-        <div className="flex flex-col gap-5 text-center justify-center items-center">
+        <div className="flex flex-col gap-5 text-center justify-center items-center mb-5">
           <div className="flex gap-3 justify-center">
             <div className="w-8 h-8 rounded-full shadow-lg flex items-center justify-center hover:bg-[var(--brand-surface)]">
               <a href="#">
@@ -32,7 +32,7 @@ const Footer = () => {
             <a href="#"><img src={playStore} alt="" /></a>
           </div>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mb-5">
           <h6>دسترسی سریع</h6>
           <Link to="/" className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
             صفحه اصلی
@@ -44,7 +44,7 @@ const Footer = () => {
             درباره ما
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mb-5">
           <h6>مطالب</h6>
           <Link to="/" className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
             هزینه های خطوط هوایی
@@ -56,7 +56,7 @@ const Footer = () => {
             پایین ترین نرخ ها
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mb-5">
           <h6>شرکت</h6>
           <Link to="/" className="text-[var(--text-secondary)] hover:text-[var(--text-primary)]">
             فرصت های شغلی
@@ -68,7 +68,7 @@ const Footer = () => {
             تاریخچه
           </Link>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 mb-5">
           <Link href="/">
             <img
               src={logo}

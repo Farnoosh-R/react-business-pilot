@@ -12,6 +12,7 @@ const Header = () => {
       id="header"
       className="relative bg-contain bg-[position:top_right] bg-no-repeat min-h-screen" style={{ backgroundImage: `url(${decore})` }}
     >
+      <h1>test</h1>
       <div className="app-container mt-20 flex flex-col lg:flex-row gap-10 scroll-anim" style={{ "--from": "scale(0.9)" }}>
         <img
           className="relative"

@@ -10,20 +10,17 @@ const Header = () => {
   return (
     <section
       id="header"
-      className="relative bg-contain bg-[position:top_right] bg-no-repeat min-h-screen" style={{ backgroundImage: `url(${decore})` }}
+      className="relative min-h-screen"
     >
-      <h1>test</h1>
-      <div className="app-container mt-20 flex flex-col lg:flex-row gap-10 scroll-anim" style={{ "--from": "scale(0.9)" }}>
-        <img
-          className="relative"
+      <div className="app-container mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-anim" style={{ "--from": "scale(0.9)" }}>
+    <div className="relative">
+          <img
+          className="lg:absolute lg:-right-37 w-full lg:w-[700px] max-w-none rounded-tl-[200px]"
           src={traveller}
           alt="traveller"
         />
-        <img
-          className="absolute right-[43%] top-[10%] w-auto h-auto hidden lg:block"
-          src={plane}
-          alt="plane"
-        />
+      
+    </div>
 
         <div className="flex flex-col gap-3 mt-20">
           <h5 className="text-[var(--brand-primary)]">

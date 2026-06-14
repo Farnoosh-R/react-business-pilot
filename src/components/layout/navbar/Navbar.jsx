@@ -96,10 +96,10 @@ const Navbar = () => {
     <nav className="absolute top-0 left-0 w-full z-50 flex items-center justify-betwee h-[80px] bg-transparent">
       {/* Right Side */}
       <div className="flex app-container items-center gap-4">
-        <Button variant="accent" type="outline">
-          <FiMap style={{ marginLeft: "5px" }} />
-          برنامه‌ریزی سفر
-        </Button>
+        {/* Logo */}
+        <Link to="/">
+          <img src={logo} className="w-25" />
+        </Link>
 
         {/* Menu */}
         <div
@@ -111,7 +111,11 @@ const Navbar = () => {
     bg-white lg:bg-transparent
     lg:opacity-100 lg:visible lg:pointer-events-auto
 
-    ${mobileOpen ? "opacity-100 visible pointer-events-auto" : "opacity-0 invisible pointer-events-none"}
+    ${
+      mobileOpen
+        ? "opacity-100 visible pointer-events-auto"
+        : "opacity-0 invisible pointer-events-none"
+    }
   `}
         >
           <ul
@@ -124,10 +128,10 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Logo */}
-        <Link to="/">
-          <img src={logo} className="w-25" />
-        </Link>
+        <Button variant="accent" type="outline">
+          <FiMap style={{ marginLeft: "5px" }} />
+          رزرو جلسه مشاوره
+        </Button>
 
         {/* Hamburger */}
         <button

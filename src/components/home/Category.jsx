@@ -11,7 +11,7 @@ import { BiSupport } from "react-icons/bi";
 import { FaHistory } from "react-icons/fa";
 const Category = () => {
   return (
-    <section id="#category" className="relative">
+    <section id="#category" className="relative lg:mt-40">
       <DotDecoration style={{ top: "0px", right: "100px" }} />
       <div className="app-container flex flex-col gap-5 text-center">
         <h6 className="text-[var(--text-secondary)]">دسته بندی ها</h6>

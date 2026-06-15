@@ -1,36 +1,40 @@
 import { Link } from "react-router-dom";
 
-const Button = ({ children, variant = "primary", to, type }) => {
+const Button = ({
+  children,
+  variant = "primary",
+  to,
+  btnType,
+  size = "md",
+}) => {
   const base =
-    "px-4 py-2 rounded-lg font-medium justify-center w-fit items-center hover:brightness-90 inline-flex cursor-pointer";
+    "rounded-lg font-medium justify-center w-fit items-center hover:brightness-90 inline-flex cursor-pointer transition-all";
+
+  const sizes = {
+    sm: "px-3 py-1 text-sm",
+    md: "px-4 py-2 text-base",
+    lg: "px-6 py-3 text-lg",
+  };
 
   const variants = {
-    primary:
-      "bg-[var(--brand-secondary)] text-white shadow-lg shadow-orange-300/50",
-
-    secondary: "bg-gray-200 text-black",
-
-    pastel: "bg-gradient-to-r from-[#FF946D] to-[#FF7D68] text-white px-6 py-4",
-    accent: "bg-[var(--brand-accent)] text-white shadow-lg shadow-orange-300/50"
+    primary: "bg-[var(--brand-primary)] text-white shadow-lg",
   };
 
   const outlineVariants = {
     primary:
-      "border border-[var(--brand-secondary)] text-[var(--brand-secondary)] hover:bg-[var(--brand-secondary)] hover:text-white",
-
+      "border border-[var(--brand-primary)] text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white",
     secondary:
       "border border-gray-500 text-gray-700 hover:bg-gray-500 hover:text-white",
-
     pastel:
       "border border-[#FF7D68] text-[#FF7D68] hover:bg-gradient-to-r hover:from-[#FF946D] hover:to-[#FF7D68] hover:text-white",
-      accent: "border border-[var(--brand-accent)] text-[var(--brand-accent)] hover:bg-[var(--brand-accent)] hover:text-white"
+    accent:
+      "border border-[var(--brand-accent)] text-[var(--brand-accent)] hover:bg-[var(--brand-accent)] hover:text-white",
   };
 
-  // const className = `${base} ${variants[variant]}`;
   const className =
-    type === "outline"
-      ? `${base} ${outlineVariants[variant]}`
-      : `${base} ${variants[variant]}`;
+    btnType === "outline"
+      ? `${base} ${sizes[size]} ${outlineVariants[variant]}`
+      : `${base} ${sizes[size]} ${variants[variant]}`;
 
   if (to) {
     return (

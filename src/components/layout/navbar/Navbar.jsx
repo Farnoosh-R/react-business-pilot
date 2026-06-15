@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiMap } from "react-icons/fi";
+import { FaRegLightbulb } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import MenuItem from "./MenuItem.jsx";
 import { Link } from "react-router-dom";
@@ -8,85 +8,89 @@ import logo from "../../../../src/assets/images/logo.png";
 
 const menuData = [
   {
-    label: "صفحه اصلی",
+    label: "خانه",
     path: "/",
   },
+    {
+    label: "خدمات",
+    path: "/services",
+  },
   {
-    label: "درباره ما",
+    label: "درباره من",
     path: "/about",
+  },
+      {
+    label: "مطالعات",
+    path: "/blog",
+  },
+    {
+    label: "مقالات",
+    path: "/blog",
   },
   {
     label: "تماس با ما",
     path: "/contact",
   },
-  {
-    label: "مقالات",
-    path: "/blog",
-  },
-  {
-    label: "پرواز ها",
-    path: "flights",
-  },
-  {
-    label: "اقامت",
-    children: [
-      {
-        label: "هتل ها",
-        path: "hotels",
-      },
-      {
-        label: "ویلا و اقامتگاه",
-        path: "villas and residences",
-      },
-    ],
-  },
-  {
-    label: "تورهای خارجی",
-    children: [
-      {
-        label: "تورهای اروپایی",
-        children: [
-          {
-            label: "تور انگلیس",
-            path: "england",
-          },
-          {
-            label: "تور ترکیه",
-            path: "turkish",
-          },
-          {
-            label: "تور اسپانیا",
-            path: "espain",
-          },
-        ],
-      },
-      {
-        label: "تورهای خاورمیانه",
-        children: [
-          {
-            label: "تور امارات",
-            path: "emirates",
-          },
-          {
-            label: "تور کشتی کروز خلیج فارس",
-            path: "persian gulf cruise ship",
-          },
-          {
-            label: "تور عمان",
-            path: "oman",
-          },
-          {
-            label: "تور قطر",
-            path: "qatar",
-          },
-        ],
-      },
-      {
-        label: "تورهای آمریکا",
-        path: "america",
-      },
-    ],
-  },
+  // {
+  //   label: "اقامت",
+  //   children: [
+  //     {
+  //       label: "هتل ها",
+  //       path: "hotels",
+  //     },
+  //     {
+  //       label: "ویلا و اقامتگاه",
+  //       path: "villas and residences",
+  //     },
+  //   ],
+  // },
+  // {
+  //   label: "تورهای خارجی",
+  //   children: [
+  //     {
+  //       label: "تورهای اروپایی",
+  //       children: [
+  //         {
+  //           label: "تور انگلیس",
+  //           path: "england",
+  //         },
+  //         {
+  //           label: "تور ترکیه",
+  //           path: "turkish",
+  //         },
+  //         {
+  //           label: "تور اسپانیا",
+  //           path: "espain",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       label: "تورهای خاورمیانه",
+  //       children: [
+  //         {
+  //           label: "تور امارات",
+  //           path: "emirates",
+  //         },
+  //         {
+  //           label: "تور کشتی کروز خلیج فارس",
+  //           path: "persian gulf cruise ship",
+  //         },
+  //         {
+  //           label: "تور عمان",
+  //           path: "oman",
+  //         },
+  //         {
+  //           label: "تور قطر",
+  //           path: "qatar",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       label: "تورهای آمریکا",
+  //       path: "america",
+  //     },
+  //   ],
+  // },
 ];
 
 const Navbar = () => {
@@ -98,7 +102,13 @@ const Navbar = () => {
       <div className="flex app-container items-center gap-4">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} className="w-25" />
+          <div className="flex">
+            <img src={logo} className="w-12" />
+            <div className="flex flex-col">
+              <span className="font-bold">امیرعلی قربانی</span>
+              <span className="text-sm text-[var(--text-secondary)]">مشاور توسعه کسب و کار و استراتژی</span>
+            </div>
+          </div>
         </Link>
 
         {/* Menu */}
@@ -128,8 +138,8 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <Button variant="accent" type="outline">
-          <FiMap style={{ marginLeft: "5px" }} />
+        <Button variant="primary">
+          <FaRegLightbulb style={{ marginLeft: "5px" }} />
           رزرو جلسه مشاوره
         </Button>
 

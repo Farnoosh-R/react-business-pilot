@@ -42,33 +42,25 @@
     font-display: swap;
   }
   :root {
+
+/* Tokens */
+    --blue-900: #14183e;
+    --blue-800: #1c2c55;
+
+    --gray-50: #f5f7fa;
+    --gray-200: #9ca3af;
+    --gray-400: #757a84;
+    --gray-700: #1a1a1a;
     /* Typography */
-    --text-primary: #14183e;
-    --text-secondary: #5e6282;
-    --text-muted: #9ca3af;
+    --text-primary: var(--gray-700);
+    --text-secondary: var(--gray-400);
+    --text-muted: var(--gray-200);
 
     /* Brand / Primary */
-    --brand-primary: #df6951;
-    --brand-primary-hover: #bb533e;
-    --brand-secondary: #f1a501;
-    --brand-secondary-hover: #dd9803;
-    --brand-accent: #006380;
-    --brand-accent-hover: #025169;
-    --brand-glow: #d5aee4;
-    --brand-glow-light: #f9f7ff;
-    --brand-sky: #59b1e6;
-    --brand-sky-light: #f1faff;
-    --brand-surface: #fff1da;
-    --brand-muted: #e6ebf4;
-
-    /* UI Colors */
-    /* --success: #22c55e;
-  --warning: #f59e0b;
-  --danger: #ef4444; */
-
-    /* Background */
-    --bg: #ffffff;
-    /* --bg-soft: #f9fafb; */
+    --brand-primary: var(--blue-900);
+    --brand-secondary: var(--blue-800);
+    --brand-surface: var(--gray-50);
+    --brand-dark: var(--gray-700);
 
     /* Border */
     /* --border: #e5e7eb; */

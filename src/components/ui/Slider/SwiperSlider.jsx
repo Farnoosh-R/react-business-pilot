@@ -30,13 +30,13 @@ export default function SwiperSlider({ items }) {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-fit object-cove"
+                  className="object-cover w-[70px] h-[70px] rounded-full"
                 />
 
                 <p className="mt-4 leading-9 text-justify">
                   {item.description}
                 </p>
-                <h6>{item.title}</h6>
+                <h6 className="text-[var(--text-secondary)]">{item.title}</h6>
               </div>
             </div>
           </SwiperSlide>

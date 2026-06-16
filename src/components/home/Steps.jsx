@@ -5,16 +5,16 @@ import { MdEco } from "react-icons/md";
 import { MdArticle } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdApartment } from "react-icons/md";
-import stepsTraveller from "../../../src/assets/images/layout/steps-traveller.jpg"
-import rome from "../../../src/assets/images/layout/rome.png"
-import progressbar from "../../../src/assets/images/layout/progressbar.png"
-
+import stepsTraveller from "../../../src/assets/images/layout/steps-traveller.jpg";
+import rome from "../../../src/assets/images/layout/rome.png";
+import progressbar from "../../../src/assets/images/layout/progressbar.png";
+import aboutme from "../../assets/images/layout/aboutme.png";
 
 const Steps = () => {
   return (
-    <section id="steps">
+    <section id="steps" className="bg-[var(--brand-primary)]">
       <div className="app-container">
-        <div className="flex flex-col md:flex-row justify-between">
+        {/* <div className="flex flex-col md:flex-row justify-between">
           <div className="scroll-anim mb-5" style={{ "--from": "translateX(100px)" }}>
             <h6 className="text-[var(--text-secondary)]">چند گام ساده</h6>
             <h2 className="leading-16">سفر بعدی خود را</h2>
@@ -114,6 +114,42 @@ const Steps = () => {
             </div>
           </div>
         </div>
+        </div> */}
+        <div className="flex flex-col lg:flex-row gap-3 pt-5 items-center px-10">
+          <div className="flex flex-col gap-7 text-center w-2/3">
+            <div className="flex flex-col gap-3 text-center">
+              <h6 className="text-[var(--text-secondary)]">درباره من</h6>
+              <h2 className="text-[var(--brand-surface)]">
+                مشاوری همراه با تجربه و نگاه استراتژیک
+              </h2>
+            </div>
+            <div className="text-[var(--brand-muted)] leading-7">
+              با بیش از 10 سال تجربه در حوزه مشاوره مدیریت، توسعه کسب و کار و
+              استراتژی به کسب و کار ها کمک کرده ام تا با تصمیم های بهتر، رشد
+              پایدار و مزیت رقابتی ایجاد کنند.
+            </div>
+            <div className="flex justify-center gap-30">
+              <div className="flex flex-col">
+                <h3 className="text-[var(--text-secondary)]">30+</h3>
+                <div className="text-[var(--brand-muted)]">مشتری راضی</div>
+              </div>
+              <div>
+                  <div className="flex flex-col">
+                <h3 className="text-[var(--text-secondary)]">50+</h3>
+                <div className="text-[var(--brand-muted)]">پروژه موفق</div>
+              </div>
+              </div>
+              <div>
+                  <div className="flex flex-col">
+                <h3 className="text-[var(--text-secondary)]">10+</h3>
+                <div className="text-[var(--brand-muted)]">سال تجربه</div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div className="">
+            <img src={aboutme} className="w-[500px]" alt="" />
+          </div>
         </div>
       </div>
     </section>

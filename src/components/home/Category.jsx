@@ -1,5 +1,4 @@
 import { DotDecoration } from "../shared/decoration/DotDecoration";
-import { SquareDecoration } from "../shared/decoration/SquareDecoration";
 import SquareDecorationBig from "../shared/decoration/SquareDecorationBig";
 import gear from "../../../src/assets/images/layout/gear.png";
 import mic from "../../../src/assets/images/layout/mic.png";
@@ -11,78 +10,94 @@ import { BiSupport } from "react-icons/bi";
 import { FaHistory } from "react-icons/fa";
 const Category = () => {
   return (
-    <section id="#category" className="relative lg:mt-40">
+    <section id="#category" className="relative ">
       <DotDecoration style={{ top: "0px", right: "100px" }} />
       <div className="app-container flex flex-col gap-5 text-center">
-        <h6 className="text-[var(--text-secondary)]">دسته بندی ها</h6>
-        <h2>ما بهترین خدمات را ارائه می‌دهیم</h2>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-7 mt-20 place-items-center">
+        <h6 className="text-[var(--text-secondary)]">خدمات من</h6>
+        <h2 className="text-[var(--text-primary-alt)]">
+          راهکارهای تخصصی برای رشد پایدار کسب و کار شما
+        </h2>
+        <div className="grid grid-cols-2 lg:grid-cols-5 gap-7 mt-20 place-items-center">
           <div
-            className="relative flex flex-col gap-4 items-center mb-5 scroll-anim"
+            className="relative flex flex-col items-center gap-3 mb-5 scroll-anim"
             style={{ "--from": "translateX(40px)" }}
           >
             <div className="relative">
-              {/* <img className="" src={gear} alt="" /> */}
-              <div><FaMedal style={{color: "var(--brand-accent)"}} size={50}/></div>
-              <SquareDecoration style={{ top: "-15px", right: "-20px", width: "60px", height: "60px" }} />
-            </div>
-            <div className="flex flex-col gap-4 mt-10">
-              <h6>رتبه یک سفر</h6>
               <div>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
+                <FaMedal style={{ color: "var(--brand-secondary)" }} size={50} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[var(--text-primary-alt)]">بهینه سازی فرآیندها</h6>
+              <div className="text-[var(--text-accent)]">
+            بهبود فرآیندها و سیستم ها برای افزایش بهره وری و کاهش هزینه ها
               </div>
             </div>
           </div>
           <div
-            className="relative flex flex-col gap-4 items-center mb-5 scroll-anim"
+            className="relative flex flex-col gap-3 items-center mb-5 scroll-anim"
             style={{ "--from": "translateX(80px)" }}
           >
             <div className="relative">
-              {/* <img className="" src={mic} alt="" /> */}
-              <div><RiTeamFill style={{color: "var(--brand-accent)"}} size={50}/></div>
-              <SquareDecoration style={{ bottom: "-10px", right: "-20px", width: "60px", height: "60px" }} />
-            </div>
-            <div className="flex flex-col gap-4 mt-10">
-              <h6>رویدادهای محلی</h6>
               <div>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
+                <RiTeamFill
+                  style={{ color: "var(--brand-secondary)" }}
+                  size={50}
+                />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[var(--text-primary-alt)]">بازاریابی و برندینگ</h6>
+              <div className="text-[var(--text-accent)]">
+         استراتژی بازاریابی و برندینگ و ارتباط موثر با مشتریان هدف
               </div>
             </div>
           </div>
           <div
-            className="relative flex flex-col gap-4 items-center mb-5 shadow-none md:shadow-2xl md:p-10 rounded-4xl z-10 scroll-anim"
+            className="relative flex flex-col gap-3 items-center mb-5 scroll-anim"
             style={{ "--from": "translateX(100px)" }}
           >
             <div className="relative">
-              {/* <img className="" src={plane} alt="" /> */}
-              <div><BiSupport style={{color: "var(--brand-accent)"}} size={50}/></div>
-              <SquareDecoration style={{ top: "-15px", left: "-20px", width: "60px", height: "60px" }} />
-            </div>
-            <div className="flex flex-col gap-4 mt-10">
-              <h6>بهترین پروازها</h6>
               <div>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
+                <BiSupport style={{ color: "var(--brand-secondary)" }} size={50} />
               </div>
             </div>
-            <div className="hidden md:block"><SquareDecorationBig style={{ bottom: "-30px", left: "-25px" }} /></div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[var(--text-primary-alt)]">مدل سازی کسب و کار</h6>
+              <div className="text-[var(--text-accent)]">
+               طراحی مدل کسب و کار، ارزش پیشنهادی و ساختار درآمدی مناسب
+              </div>
+            </div>
           </div>
           <div
-            className="relative flex flex-col gap-4 items-center mb-5 scroll-anim"
+            className="relative flex flex-col gap-3 items-center mb-5 scroll-anim"
             style={{ "--from": "translateX(120px)" }}
           >
             <div className="relative">
-              {/* <img className="" src={satelliteDish} alt="" /> */}
-              <div><FaHistory style={{color: "var(--brand-accent)"}} size={50}/></div>
-              <SquareDecoration style={{ bottom: "-10px", left: "-20px", width: "60px", height: "60px" }} />
-            </div>
-            <div className="flex flex-col gap-4 mt-10">
-              <h6>پیش بینی آب و هوا</h6>
               <div>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                استفاده از طراحان گرافیک است.
+                <FaHistory style={{ color: "var(--brand-secondary)" }} size={50} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[var(--text-primary-alt)]">استراتژی و برنامه ریزی</h6>
+              <div className="text-[var(--text-accent)]">
+               طراحی استراتژی های عملیاتی و برنامه های اجرایی اهداف سازمان
+              </div>
+            </div>
+          </div>
+            <div
+            className="relative flex flex-col gap-3 items-center mb-5 scroll-anim"
+            style={{ "--from": "translateX(120px)" }}
+          >
+            <div className="relative">
+              <div>
+                <FaHistory style={{ color: "var(--brand-secondary)" }} size={50} />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h6 className="text-[var(--text-primary-alt)]">توسعه کسب و کار</h6>
+              <div className="text-[var(--text-accent)]">
+      تحلیل بازار، شناسایی فرصت ها و طراحی مسیر رشد درآمد و سهم بازار
               </div>
             </div>
           </div>

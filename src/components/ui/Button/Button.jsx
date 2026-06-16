@@ -8,7 +8,7 @@ const Button = ({
   size = "md",
 }) => {
   const base =
-    "rounded-lg font-medium justify-center w-fit items-center hover:brightness-90 inline-flex cursor-pointer transition-all";
+    "group rounded-lg font-medium justify-center w-fit items-center hover:brightness-90 inline-flex cursor-pointer transition-all";
 
   const sizes = {
     sm: "px-3 py-1 text-sm",
@@ -18,17 +18,15 @@ const Button = ({
 
   const variants = {
     primary: "bg-[var(--brand-primary)] text-white shadow-lg",
+    secondary: "bg-[var(--brand-secondary)] !text-white shadow-lg",
   };
+
 
   const outlineVariants = {
     primary:
       "border border-[var(--brand-primary)] text-[var(--brand-primary)] hover:bg-[var(--brand-primary)] hover:text-white",
     secondary:
-      "border border-gray-500 text-gray-700 hover:bg-gray-500 hover:text-white",
-    pastel:
-      "border border-[#FF7D68] text-[#FF7D68] hover:bg-gradient-to-r hover:from-[#FF946D] hover:to-[#FF7D68] hover:text-white",
-    accent:
-      "border border-[var(--brand-accent)] text-[var(--brand-accent)] hover:bg-[var(--brand-accent)] hover:text-white",
+      "border border-[var(--brand-secondary)] text-[var(--text-secondary)] hover:bg-[var(--brand-secondary)] hover:text-white",
   };
 
   const className =

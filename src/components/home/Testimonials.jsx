@@ -2,8 +2,15 @@ import SwiperSlider from "../ui/Slider/SwiperSlider";
 import { MdArticle } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEco } from "react-icons/md";
-import msg from "../../../src/assets/images/layout/msg.png"
-import slide1 from "../../../src/assets/images/layout/slide1.png"
+import msg from "../../../src/assets/images/layout/msg.png";
+import slide1 from "../../../src/assets/images/layout/slide1.png";
+import {
+  FaWhatsapp,
+  FaInstagram,
+  FaLinkedin,
+  FaYoutube,
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Testimonials = () => {
   const slides = [
@@ -37,26 +44,63 @@ const Testimonials = () => {
     <section id="testimonials">
       <div className="app-container">
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-col gap-3">
-            <h6 className="text-[var(--text-secondary)]">نظرات مشتریان</h6>
-            <h2>نظر شما درباره</h2>
-            <h2>Flyza</h2>
-            <div className="flex gap-3">
-              <div className="bg-[var(--brand-muted)] p-3 rounded-full">
-                <FaTelegramPlane size={24} style={{ color: "var(--brand-accent)" }}/>
-              </div>
-              <div className="bg-[var(--brand-muted)] p-3 rounded-full">
-                <MdArticle size={24} style={{ color: "var(--brand-accent)" }}/>
-              </div>
-              <div className="bg-[var(--brand-muted)] p-3 rounded-full">
-                <MdEco size={24} style={{ color: "var(--brand-accent)" }}/>
-              </div>
-                  <div className="bg-[var(--brand-muted)] p-3 rounded-full">
-                <MdEco size={24} style={{ color: "var(--brand-accent)" }}/>
+          <div className="flex flex-col gap-7">
+            <div>
+              <h6 className="text-[var(--text-secondary)]">نظرات مشتریان</h6>
+              <div className="flex flex-col gap-2 text-[var(--text-primary-alt)]">
+                <h2>نظرات مدیران و</h2>
+                <h2>صاحبان کسب‌ و کار</h2>
               </div>
             </div>
+            <div className="flex gap-3">
+              <Link
+                to={"#"}
+                className="group bg-[var(--brand-muted)] p-3 rounded-full transition-all duration-300 hover:bg-[var(--brand-accent)] hover:-translate-y-1 hover:shadow-lg"
+              >
+                <FaWhatsapp
+                  size={20}
+                  className="text-[var(--brand-accent)] transition-colors duration-300 group-hover:text-white"
+                />
+              </Link>
+              <Link
+                to={"#"}
+                className="group bg-[var(--brand-muted)] p-3 rounded-full transition-all duration-300 hover:bg-[var(--brand-accent)] hover:-translate-y-1 hover:shadow-lg"
+              >
+                <FaTelegramPlane
+                  size={20}
+                  className="text-[var(--brand-accent)] transition-colors duration-300 group-hover:text-white"
+                />
+              </Link>
+              <Link
+                to={"#"}
+                className="group bg-[var(--brand-muted)] p-3 rounded-full transition-all duration-300 hover:bg-[var(--brand-accent)] hover:-translate-y-1 hover:shadow-lg"
+              >
+                <FaInstagram
+                  size={20}
+                  className="text-[var(--brand-accent)] transition-colors duration-300 group-hover:text-white"
+                />
+              </Link>
+              <Link
+                to={"#"}
+                className="group bg-[var(--brand-muted)] p-3 rounded-full transition-all duration-300 hover:bg-[var(--brand-accent)] hover:-translate-y-1 hover:shadow-lg"
+              >
+                <FaLinkedin
+                  size={20}
+                  className="text-[var(--brand-accent)] transition-colors duration-300 group-hover:text-white"
+                />
+              </Link>
+              <Link
+                to={"#"}
+                className="group bg-[var(--brand-muted)] p-3 rounded-full transition-all duration-300 hover:bg-[var(--brand-accent)] hover:-translate-y-1 hover:shadow-lg"
+              >
+                <FaYoutube
+                  size={20}
+                  className="text-[var(--brand-accent)] transition-colors duration-300 group-hover:text-white"
+                />
+              </Link>
+            </div>
             <img
-              className="opacity-5 hidden lg:block scale-x-[-1] -mt-25"
+              className="opacity-5 hidden lg:block scale-x-[-1] -mt-25 -z-1"
               src={msg}
               alt=""
             />

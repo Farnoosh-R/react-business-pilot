@@ -42,20 +42,19 @@
     font-display: swap;
   }
   :root {
-
-/* Tokens */
+    /* Tokens */
     --blue-900: #14183e;
     --blue-800: #1c2c55;
-
+    --gray-10: #e4e4e4;
     --gray-50: #f5f7fa;
-    
+
     --gray-200: #9ca3af;
     --gray-400: #757a84;
     --gray-700: #1a1a1a;
 
     --beige-500: #cba152;
     /* Typography */
-    --text-primary: var(--gray-700);
+    --text-primary: var(--blue-900);
     --text-primary-alt: var(--blue-900);
     --text-secondary: var(--beige-500);
     --text-accent: var(--gray-400);
@@ -75,7 +74,7 @@
     --brand-muted: #e6ebf4;
 
     /* Border */
-    /* --border: #e5e7eb; */
+    --border: var(--gray-10);
 
     * {
       transition: all 200ms ease-in-out;
@@ -107,7 +106,7 @@
   }
   html {
     direction: rtl;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
   }
   body {
     margin: 0;
@@ -115,7 +114,8 @@
     font-family: "Vazir", sans-serif;
     color: var(--text-primary);
     font-size: 14px;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
+    line-height: 30px;
   }
   #root {
     /* width: 1400px; */

@@ -34,7 +34,7 @@ const Services = () => {
             با ترکیب دانش استراتژی، تجربه اجرایی و شناخت بازار، به شما کمک می
             کنیم تصمیم های درست بگیرید، رشد کنید و جلوتر از رقبا باشید.
           </div>
-          <Button variant="secondary" btnType="outline" size="lg">
+          <Button to={'/contact'} variant="secondary" btnType="outline" size="lg">
             رزور جلسه مشاوره
           </Button>
           <div className="text-4xl text-white tracking-[10px] font-bold">

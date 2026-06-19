@@ -12,28 +12,26 @@ import About from "./pages/About/About";
 import Contact from "./pages/contact/Contact";
 import Services from "./pages/Services/Services";
 
-
-
 export function useScrollAnimation() {
-//   useEffect(() => {
-//     const elements = document.querySelectorAll(".scroll-anim");
-//     const observer = new IntersectionObserver((entries) => {
-//       entries.forEach((entry) => {
-//         if (entry.isIntersecting) {
-//           entry.target.classList.remove("show");
-//           void entry.target.offsetWidth;
-//           entry.target.classList.add("show");
-//         } else {
-//           entry.target.classList.remove("show");
-//         }
-//       });
-//     }, {
-//       threshold: 0.2,
-//     });
-//     elements.forEach((el) => observer.observe(el));
-//     return () => observer.disconnect();
-//   }, []);
-// }
+  //   useEffect(() => {
+  //     const elements = document.querySelectorAll(".scroll-anim");
+  //     const observer = new IntersectionObserver((entries) => {
+  //       entries.forEach((entry) => {
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.remove("show");
+  //           void entry.target.offsetWidth;
+  //           entry.target.classList.add("show");
+  //         } else {
+  //           entry.target.classList.remove("show");
+  //         }
+  //       });
+  //     }, {
+  //       threshold: 0.2,
+  //     });
+  //     elements.forEach((el) => observer.observe(el));
+  //     return () => observer.disconnect();
+  //   }, []);
+  // }
 
   const location = useLocation();
 
@@ -50,7 +48,7 @@ export function useScrollAnimation() {
           }
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     elements.forEach((el) => observer.observe(el));
@@ -62,6 +60,12 @@ export function useScrollAnimation() {
 function App() {
   const [count, setCount] = useState(0);
   useScrollAnimation();
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>

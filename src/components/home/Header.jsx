@@ -38,7 +38,7 @@ const Header = () => {
           </p>
           <div className="flex gap-10 justify-end">
             <div className="flex gap-4 items-center">
-              <Button variant="primary" size="lg">دریافت مشاوره رایگان</Button>
+              <Button to={'/contact'} variant="primary" size="lg">دریافت مشاوره رایگان</Button>
               <Button variant="secondary" btnType="outline" size="lg" >
                 <div className="border border-[var(--text-secondary)] group-hover:border-white p-2 ml-3 rounded-full"><FaPlay size={12} className="text-current"/></div>
                 درباره من بیشتر بدانید

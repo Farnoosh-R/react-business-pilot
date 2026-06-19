@@ -74,7 +74,7 @@ const Footer = () => {
             to="/services"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
-            خذمات
+            خدمات
           </Link>
           <Link
             to="/about"
@@ -131,14 +131,14 @@ const Footer = () => {
             همکاری با ما
           </Link>
           <Link
-            to="/"
+            to="/contact"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
             تاریخچه
           </Link>
         </div>
         <div className="flex flex-col gap-3 mb-5">
-          <Link href="/">
+          <Link href="/about">
             <img src={logoLight} className="w-25 mx-auto" />
           </Link>
           <div className="text-white text-center">

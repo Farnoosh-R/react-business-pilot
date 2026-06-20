@@ -2,14 +2,23 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getPostBySlug } from "../../services/wordpressApi";
 import Button from "../../components/ui/Button/Button";
-import { FaTelegramPlane, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaTelegramPlane, FaLinkedinIn, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaCalendarAlt } from "react-icons/fa";
 import { HiOutlineCalendar, HiOutlineTag, HiOutlineUser } from "react-icons/hi";
+import baleDark from "../../assets/images/layout/baleDark.png";
 
 const SinglePost = () => {
   const { slug } = useParams();
 
   const [post, setPost] = useState(null);
+
+  const toJalali = (date) => {
+    return new Intl.DateTimeFormat("fa-IR-u-ca-persian", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    }).format(new Date(date));
+  };
 
   useEffect(() => {
     getPostBySlug(slug).then((data) => {
@@ -29,7 +38,9 @@ const SinglePost = () => {
             <h2 className="mb-4">{post.title.rendered}</h2>
             <div className="flex gap-1">
               <HiOutlineCalendar color="var(--brand-primary" />
-              <div className="text-[var(--text-secondary)]">{post.date}</div>
+              <div className="text-[var(--text-secondary)]">
+                {toJalali(post.date)}
+              </div>
             </div>
             <div className="flex gap-1">
               <HiOutlineTag color="var(--brand-primary" />
@@ -59,14 +70,26 @@ const SinglePost = () => {
                 مشاهده همه مقالات
               </Button>
               <div className="flex gap-3 text-[var(--brand-accent)]">
-                <a href="#">
-                  <FaTelegramPlane />
+                <a
+                  href="https://ble.ir/amiralighorbani2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img className="w-4" src={baleDark} alt="" />
                 </a>
-                <a href="#">
-                  <FaLinkedinIn />
+                <a
+                  href="https://www.linkedin.com/in/amiraliqorbani"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn size={18}/>
                 </a>
-                <a href="#">
-                  <FaInstagram />
+                <a
+                  href="https://wa.me/989128939845"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaWhatsapp size={18}/>
                 </a>
               </div>
             </div>

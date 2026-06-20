@@ -14,7 +14,7 @@ const Blog = () => {
     <div id="blog" className="page">
       <div className="app-container">
         <h1 className="mb-5">مقالات</h1>
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 xl:grid-cols-4 place-items-center">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 place-items-center">
           {posts.map((post) => (
             <PostCard key={post.id} post={post} />
           ))}

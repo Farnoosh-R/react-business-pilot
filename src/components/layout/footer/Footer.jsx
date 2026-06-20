@@ -11,6 +11,7 @@ import googlePlay from "../../../../src/assets/images/layout/googlePlay.png";
 import playStore from "../../../../src/assets/images/layout/playStore.png";
 import logo from "../../../../src/assets/images/logo.png";
 import logoLight from "../../../assets/images/layout/logo-light.png";
+import bale from "../../../assets/images/layout/bale.png"
 
 const Footer = () => {
   return (
@@ -33,31 +34,50 @@ const Footer = () => {
             <Link to={"#"}>
               <FaTelegramPlane
                 size={18}
-                className="text-white hover:text-[var(--text-secondary)]"
+                className="text-white transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               />
             </Link>
-            <Link to={"#"}>
+            <a
+              href="https://www.linkedin.com/in/amiraliqorbani"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedinIn
                 size={18}
-                className="text-white hover:text-[var(--text-secondary)]"
+                className="text-white transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               />
-            </Link>
+            </a>
             <Link to={"#"}>
               <FaInstagram
                 size={18}
-                className="text-white hover:text-[var(--text-secondary)]"
+                className="text-white transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               />
             </Link>
-            <Link to={"#"}>
+            <a
+              href="https://wa.me/989128939845"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaWhatsapp
                 size={18}
-                className="text-white hover:text-[var(--text-secondary)]"
+                className="text-white transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               />
-            </Link>
+            </a>
+            <a
+              href="https://ble.ir/amiralighorbani2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={bale} className="w-4 transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]" alt="bale" />
+              {/* <FaWhatsapp
+                size={18}
+                className="text-white hover:text-[var(--text-secondary)]"
+              /> */}
+            </a>
             <Link to={"#"}>
               <FaYoutube
                 size={18}
-                className="text-white hover:text-[var(--text-secondary)]"
+                className="text-white transition-all duration-300 hover:-translate-y-1 hover:scale-110 hover:bg-[var(--brand)] hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)]"
               />
             </Link>
           </div>
@@ -92,28 +112,22 @@ const Footer = () => {
         <div className="flex flex-col gap-3 mb-5">
           <h6 className="text-white">مقالات</h6>
           <Link
-            to="/"
+            to="https://demo4.farnooshstudio.ir/#/blog/5-%d8%b4%d8%a7%d8%ae%d8%b5-%da%a9%d9%84%db%8c%d8%af%db%8c-%d8%b9%d9%85%d9%84%da%a9%d8%b1%d8%af-%d8%af%d8%b1-%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1%db%8c%d8%a7%d8%a8%db%8c"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
-            توسعه کسب و کار
+           شاخص کلیدی عملکرد
           </Link>
           <Link
-            to="/"
+            to="https://demo4.farnooshstudio.ir/#/blog/%d8%aa%d8%b5%d9%85%db%8c%d9%85-%da%af%db%8c%d8%b1%db%8c-%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%da%98%db%8c%da%a9-%d8%af%d8%b1-%d8%b4%d8%b1%d8%a7%db%8c%d8%b7-%d8%b9%d8%af%d9%85-%d9%82%d8%b7%d8%b9%db%8c"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
             استراتژی و برنامه ریزی
           </Link>
           <Link
-            to="/"
+            to="https://demo4.farnooshstudio.ir/#/blog/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%da%98%db%8c-%d8%b1%d8%b4%d8%af-%da%a9%d8%b3%d8%a8-%d9%88-%da%a9%d8%a7%d8%b1-%d8%aa%d8%af%d9%88%db%8c%d9%86-%da%a9%d9%86%db%8c%d9%85"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
-            مدل سازی کسب و کار
-          </Link>
-          <Link
-            to="/"
-            className="text-gray-300 hover:text-[var(--text-secondary)]"
-          >
-            بازاریابی و برندینگ
+           تدوین و مدل سازی استراتژی
           </Link>
         </div>
         <div className="flex flex-col gap-3 mb-5">

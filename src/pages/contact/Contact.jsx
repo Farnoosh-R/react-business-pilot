@@ -13,8 +13,64 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
+import { useState } from "react";
 
 const Contact = () => {
+  const [form, setForm] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const res = await fetch(
+        "https://farnooshstudio.ir/api/wp-json/custom/v1/consultation",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        },
+      );
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSuccess(true);
+        setForm({
+          name: "",
+          phone: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+      }
+    } catch (err) {
+      console.log(err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div id="contact" className="page">
       <div className="app-container flex flex-col gap-20">
@@ -86,15 +142,22 @@ const Contact = () => {
             <div className="flex flex-col gap-12">
               <div className="flex gap-2">
                 <FaPhoneAlt color="var(--text-secondary)" size={25} />
-                <span className="">999999 - 0912</span>
+                <a href="tel:09128939845" className="">
+                  8939845 - 0912
+                </a>
               </div>
               <div className="flex gap-2">
                 <MdEmail color="var(--text-secondary)" size={25} />
-                <span className="">ghorbani@gmail.com</span>
+                <a
+                  href="mailto:info@amiralighorbani.ir?subject=درخواست مشاوره"
+                  className=""
+                >
+                  info@amiralighorbani.ir
+                </a>
               </div>
               <div className="flex gap-2">
                 <FaMapMarkerAlt color="var(--text-secondary)" size={25} />
-                <span className="">تهران، خیابان آفریقا، پلاک 9، واحد 9</span>
+                <span className="">تهران، ...</span>
               </div>
               <div className="flex gap-2">
                 <FaClock color="var(--text-secondary)" size={25} />
@@ -103,13 +166,19 @@ const Contact = () => {
             </div>
           </div>
           <div>
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 md:grid-cols-2 gap-4"
+            >
               {/* نام و نام خانوادگی */}
               <div className="md:col-span-1">
                 <label className="block mb-2 text-sm font-medium text-gray-700">
                   نام و نام خانوادگی
                 </label>
                 <input
+                  name="name"
+                  value={form.name}
+                  onChange={handleChange}
                   type="text"
                   placeholder="نام و نام خانوادگی خود را وارد کنید"
                   className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-[#cba152]"
@@ -122,6 +191,9 @@ const Contact = () => {
                   شماره تماس
                 </label>
                 <input
+                  name="phone"
+                  value={form.phone}
+                  onChange={handleChange}
                   type="tel"
                   placeholder="09xxxxxxxxx"
                   className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-[#cba152]"
@@ -134,6 +206,9 @@ const Contact = () => {
                   ایمیل
                 </label>
                 <input
+                  name="email"
+                  value={form.email}
+                  onChange={handleChange}
                   type="email"
                   placeholder="example@email.com"
                   className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-[#cba152]"
@@ -146,6 +221,9 @@ const Contact = () => {
                   موضوع
                 </label>
                 <input
+                  name="subject"
+                  value={form.subject}
+                  onChange={handleChange}
                   type="text"
                   placeholder="موضوع درخواست خود را وارد کنید"
                   className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none focus:border-[#cba152]"
@@ -158,6 +236,9 @@ const Contact = () => {
                   پیام
                 </label>
                 <textarea
+                  name="message"
+                  value={form.message}
+                  onChange={handleChange}
                   rows={5}
                   placeholder="پیام خود را بنویسید..."
                   className="w-full rounded-xl border border-gray-300 px-4 py-3 outline-none resize-none focus:border-[#cba152]"
@@ -168,11 +249,17 @@ const Contact = () => {
               <div className="md:col-span-2">
                 <button
                   type="submit"
+                  disabled={loading}
                   className="bg-[#cba152] hover:opacity-90 transition-all text-white px-8 py-3 rounded-xl"
                 >
-                  ارسال درخواست
+                  {loading ? "در حال ارسال..." : "ارسال درخواست"}
                 </button>
               </div>
+              {success && (
+                <div className="text-green-600 mt-4">
+                  درخواست شما با موفقیت ارسال شد ✔
+                </div>
+              )}
             </form>
           </div>
         </div>

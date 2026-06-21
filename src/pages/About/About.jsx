@@ -7,7 +7,7 @@ import { FaUsers } from "react-icons/fa";
 import { FaAward } from "react-icons/fa";
 import { FaHandshake } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
-import aboutMe from "./assets/images/aboutMe.png";
+import aboutMe from "./assets/images/aboutme.webp";
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between">
           <div className="flex flex-col gap-6 scroll-anim" style={{ "--from": "translateX(40px)" }}>
             <div>
-              <div className="tracking-[20px] text-[var(--text-secondary)]">
+              <div className="text-[var(--text-secondary)]">
                 امیرعلی قربانی
               </div>
               <h1 className="text-[var(--text-primary-alt)]">درباره من</h1>
@@ -131,13 +131,13 @@ const About = () => {
         </div>
       </div>
       <div className="app-container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
             <img src={aboutMe} alt="" />
           </div>
           <div className="flex flex-col gap-7">
             <div>
-              <div className="tracking-[20px] text-[var(--text-secondary)]">
+              <div className="text-[var(--text-secondary)]">
                 تجربه
               </div>
               <h1 className="text-[var(--text-primary-alt)]">

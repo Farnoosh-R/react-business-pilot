@@ -1,7 +1,5 @@
 import Button from "../ui/Button/Button";
-import traveller from "../../../src/assets/images/layout/traveller.png";
-import plane from "../../../src/assets/images/layout/plane.png";
-import marker from "../../../src/assets/images/layout/marker.png";
+import traveller from "../../../src/assets/images/layout/traveller.webp";
 import decore from "../../../src/assets/images/layout/decore.png";
 import { FaPlay } from "react-icons/fa";
 import { FaBullseye } from "react-icons/fa";
@@ -10,7 +8,7 @@ import { FaUser } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <section id="header" className="relative min-h-screen">
+    <section id="header" className="relative">
       <div
         className="app-container mt-20 grid grid-cols-1 lg:grid-cols-2 gap-5 scroll-anim"
         style={{ "--from": "scale(0.9)" }}

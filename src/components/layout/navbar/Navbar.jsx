@@ -19,10 +19,10 @@ const menuData = [
     label: "درباره من",
     path: "/about",
   },
-      {
-    label: "مطالعات",
-    path: "/blog",
-  },
+  //     {
+  //   label: "مطالعات",
+  //   path: "/blog",
+  // },
     {
     label: "مقالات",
     path: "/blog",
@@ -106,7 +106,7 @@ const Navbar = () => {
             <img src={logo} className="w-12" />
             <div className="flex flex-col">
               <span className="font-bold">امیرعلی قربانی</span>
-              <span className="text-sm text-[var(--text-secondary)]">مشاور توسعه کسب و کار و استراتژی</span>
+              <span className="text-sm text-[var(--text-secondary)]">مشاور توسعه کسب و کار</span>
             </div>
           </div>
         </Link>

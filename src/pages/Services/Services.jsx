@@ -1,5 +1,5 @@
 import Button from "../../components/ui/Button/Button";
-import servicesBanner from "./assets/images/servicesBanner.png";
+import servicesBanner from "./assets/images/servicesBanner.webp";
 
 import { FaComments } from "react-icons/fa";
 import { FaChessKnight } from "react-icons/fa";
@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div id="services" className="page flex flex-col gap-20">
       <div
-        className="relative flex justify-center text-center py-20 h-[500px] scroll-anim"
+        className="relative flex justify-center text-center py-20 px-7 h-[500px] scroll-anim"
         // style={{ "--from": "scale(0.9)" }}
         style={{
           backgroundImage: `url(${servicesBanner})`,
@@ -25,7 +25,7 @@ const Services = () => {
 
         <div className="flex flex-col items-center gap-7 z-10">
           <div>
-            <div className="tracking-[20px] text-[var(--text-secondary)]">
+            <div className="text-[var(--text-secondary)]">
               خدمات ما
             </div>
             <h1 className="text-white">راهکارهای تخصصی برای شما</h1>
@@ -45,7 +45,7 @@ const Services = () => {
       <div className=" flex flex-col gap-20">
         <div className="app-container">
           <div className="text-center">
-            <div className="tracking-[20px] text-[var(--text-secondary)]">
+            <div className="text-[var(--text-secondary)]">
               خذمات
             </div>
             <h1 className="text-[var(--text-primary-alt)]">حوزه‌های تخصصی</h1>

@@ -2,7 +2,6 @@ import SwiperSlider from "../ui/Slider/SwiperSlider";
 import { MdArticle } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdEco } from "react-icons/md";
-import msg from "../../../src/assets/images/layout/msg.png";
 import slide1 from "../../../src/assets/images/layout/slide1.png";
 import {
   FaWhatsapp,
@@ -11,6 +10,7 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import msg2 from '../../assets/images/layout/msg2.png'
 
 const Testimonials = () => {
   const slides = [
@@ -18,8 +18,7 @@ const Testimonials = () => {
       id: 1,
       image: slide1,
       title: "شرکت فناوری اطلاعات",
-      description:
-        "همکاری با آقای امیری دیدگاه ما را نسبت به بازار و مشتریان کاملا تغییر داد. راهکارهای ارائه شده تاثیر مستقیم بر رشد فروش و بهبود فرآیند های ما داشت. ",
+      description: "همکاری با آقای قربانی دیدگاه ما را نسبت به بازار و رفتار مشتریان به شکل قابل توجهی تغییر داد. راهکارهای ارائه‌شده توسط ایشان تاثیر مستقیم و قابل اندازه‌گیری بر رشد فروش و افزایش بهره‌وری تیم ما داشت. همچنین باعث شد فرآیندهای داخلی کسب‌وکار ما ساختارمندتر، سریع‌تر و کم‌هزینه‌تر اجرا شوند. در مجموع این همکاری مسیر تصمیم‌گیری‌های ما را حرفه‌ای‌تر کرد و به بهبود نتایج کلی مجموعه منجر شد.",
       buttonText: "Explore",
     },
     {
@@ -44,7 +43,7 @@ const Testimonials = () => {
     <section id="testimonials">
       <div className="app-container">
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col gap-7 mb-10">
             <div>
               <h6 className="text-[var(--text-secondary)]">نظرات مشتریان</h6>
               <div className="flex flex-col gap-2 text-[var(--text-primary-alt)]">
@@ -100,8 +99,8 @@ const Testimonials = () => {
               </Link>
             </div>
             <img
-              className="opacity-5 hidden lg:block scale-x-[-1] -mt-25 -z-1"
-              src={msg}
+              className=" hidden lg:block w-[90%] -mt-18 -z-1"
+              src={msg2}
               alt=""
             />
           </div>

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Button = ({
+  onClick,
   children,
   variant = "primary",
   to,
@@ -11,16 +12,15 @@ const Button = ({
     "group rounded-lg font-medium justify-center w-fit items-center hover:brightness-90 inline-flex cursor-pointer transition-all";
 
   const sizes = {
-    sm: "px-3 py-1 text-sm",
-    md: "px-4 py-2 text-base",
-    lg: "px-6 py-3 text-lg",
+    sm: "px-3 py-1 text-xs sm:text-sm",
+    md: "px-4 py-2 text-sm sm:text-base",
+    lg: "px-6 py-3 text-base sm:text-lg",
   };
 
   const variants = {
     primary: "bg-[var(--brand-primary)] text-white shadow-lg",
     secondary: "bg-[var(--brand-secondary)] !text-white shadow-lg",
   };
-
 
   const outlineVariants = {
     primary:
@@ -42,7 +42,11 @@ const Button = ({
     );
   }
 
-  return <button className={className}>{children}</button>;
+  return (
+    <button onClick={onClick} className={className}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

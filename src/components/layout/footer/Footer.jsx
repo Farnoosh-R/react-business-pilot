@@ -7,8 +7,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import googlePlay from "../../../../src/assets/images/layout/googlePlay.png";
-import playStore from "../../../../src/assets/images/layout/playStore.png";
 import logo from "../../../../src/assets/images/logo.png";
 import logoLight from "../../../assets/images/layout/logo-light.png";
 import bale from "../../../assets/images/layout/bale.png"
@@ -111,24 +109,24 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-3 mb-5">
           <h6 className="text-white">مقالات</h6>
-          <Link
-            to="https://demo4.farnooshstudio.ir/#/blog/5-%d8%b4%d8%a7%d8%ae%d8%b5-%da%a9%d9%84%db%8c%d8%af%db%8c-%d8%b9%d9%85%d9%84%da%a9%d8%b1%d8%af-%d8%af%d8%b1-%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1%db%8c%d8%a7%d8%a8%db%8c"
+          <a
+            href="https://demo4.farnooshstudio.ir/#/blog/5-%D8%B4%D8%A7%D8%AE%D8%B5-%DA%A9%D9%84%DB%8C%D8%AF%DB%8C-%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%AF%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%DB%8C%D8%A7%D8%A8%DB%8C"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
            شاخص کلیدی عملکرد
-          </Link>
-          <Link
-            to="https://demo4.farnooshstudio.ir/#/blog/%d8%aa%d8%b5%d9%85%db%8c%d9%85-%da%af%db%8c%d8%b1%db%8c-%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%da%98%db%8c%da%a9-%d8%af%d8%b1-%d8%b4%d8%b1%d8%a7%db%8c%d8%b7-%d8%b9%d8%af%d9%85-%d9%82%d8%b7%d8%b9%db%8c"
+          </a>
+          <a
+            href="https://demo4.farnooshstudio.ir/#/blog/%D8%AA%D8%B5%D9%85%DB%8C%D9%85-%DA%AF%DB%8C%D8%B1%DB%8C-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C%DA%A9-%D8%AF%D8%B1-%D8%B4%D8%B1%D8%A7%DB%8C%D8%B7-%D8%B9%D8%AF%D9%85-%D9%82%D8%B7%D8%B9%DB%8C"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
             استراتژی و برنامه ریزی
-          </Link>
-          <Link
-            to="https://demo4.farnooshstudio.ir/#/blog/%da%86%da%af%d9%88%d9%86%d9%87-%d8%a7%d8%b3%d8%aa%d8%b1%d8%a7%d8%aa%da%98%db%8c-%d8%b1%d8%b4%d8%af-%da%a9%d8%b3%d8%a8-%d9%88-%da%a9%d8%a7%d8%b1-%d8%aa%d8%af%d9%88%db%8c%d9%86-%da%a9%d9%86%db%8c%d9%85"
+          </a>
+          <a
+            href="https://demo4.farnooshstudio.ir/#/blog/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A7%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%DA%98%DB%8C-%D8%B1%D8%B4%D8%AF-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1-%D8%AA%D8%AF%D9%88%DB%8C%D9%86-%DA%A9%D9%86%DB%8C%D9%85"
             className="text-gray-300 hover:text-[var(--text-secondary)]"
           >
            تدوین و مدل سازی استراتژی
-          </Link>
+          </a>
         </div>
         <div className="flex flex-col gap-3 mb-5">
           <h6 className="text-white">شرکت</h6>

@@ -5,10 +5,7 @@ import { MdEco } from "react-icons/md";
 import { MdArticle } from "react-icons/md";
 import { FaTelegramPlane } from "react-icons/fa";
 import { MdApartment } from "react-icons/md";
-import stepsTraveller from "../../../src/assets/images/layout/steps-traveller.jpg";
-import rome from "../../../src/assets/images/layout/rome.png";
-import progressbar from "../../../src/assets/images/layout/progressbar.png";
-import aboutme from "../../assets/images/layout/aboutme.png";
+import aboutme from "../../assets/images/layout/aboutme.webp";
 
 const Steps = () => {
   return (
@@ -116,7 +113,7 @@ const Steps = () => {
         </div>
         </div> */}
         <div className="flex flex-col lg:flex-row gap-3 pt-5 items-center px-10">
-          <div className="flex flex-col gap-7 text-center w-2/3">
+          <div className="flex flex-col gap-7 text-center lg:w-2/3">
             <div className="flex flex-col gap-3 text-center">
               <h6 className="text-[var(--text-secondary)]">درباره من</h6>
               <h2 className="text-[var(--brand-surface)]">

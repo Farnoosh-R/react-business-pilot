@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { getLatestPosts, getPosts } from "../../services/wordpressApi";
 import PostCard from "../blog/PostCard";
-import decorewhippy from "../../../src/assets/images/layout/decorewhippy.png"
 
 const Articles = () => {
   const [posts, setPosts] = useState([]);

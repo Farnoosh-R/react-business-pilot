@@ -10,7 +10,7 @@ import Testimonials from "../components/home/Testimonials";
 const Home = () => {
     useScrollAnimation();
     return(
-        <div id="home" className="flex flex-col gap-20">
+        <div id="home" className="flex flex-col gap-16 lg:gap-35">
             <Header />
             <Category />
             <Articles />

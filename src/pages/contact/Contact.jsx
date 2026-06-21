@@ -1,4 +1,4 @@
-import contact from "./assets/images/contact.png";
+import contact from "./assets/images/contact.webp";
 import { FiMapPin } from "react-icons/fi";
 import { FiPhone } from "react-icons/fi";
 import { FiMail } from "react-icons/fi";
@@ -48,7 +48,14 @@ const Contact = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(form),
+          // body: JSON.stringify(form),
+          body: JSON.stringify({
+            fullName: form.name,
+            mobile: form.phone,
+            email: form.email,
+            subject: form.subject,
+            message: form.message,
+          }),
         },
       );
 
@@ -76,7 +83,7 @@ const Contact = () => {
       <div className="app-container flex flex-col gap-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="scroll-anim" style={{ "--from": "translateX(40px)" }}>
-            <div className="tracking-[20px] text-[var(--text-secondary)]">
+            <div className="text-[var(--text-secondary)]">
               ازتباط با من
             </div>
             <div className="flex flex-col gap-2 mb-4">

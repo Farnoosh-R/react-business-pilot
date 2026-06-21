@@ -1,9 +1,5 @@
 import { DotDecoration } from "../shared/decoration/DotDecoration";
 import SquareDecorationBig from "../shared/decoration/SquareDecorationBig";
-import gear from "../../../src/assets/images/layout/gear.png";
-import mic from "../../../src/assets/images/layout/mic.png";
-import plane from "../../../src/assets/images/layout/plane.png";
-import satelliteDish from "../../../src/assets/images/layout/satellite-dish.png";
 import { FaMedal } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { BiSupport } from "react-icons/bi";

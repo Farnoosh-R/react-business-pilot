@@ -46,7 +46,7 @@ const Testimonials = () => {
           <div className="flex flex-col gap-7 mb-10">
             <div>
               <h6 className="text-[var(--text-secondary)]">نظرات مشتریان</h6>
-              <div className="flex flex-col gap-2 text-[var(--text-primary-alt)]">
+              <div className="flex flex-col text-[var(--text-primary-alt)]">
                 <h2>نظرات مدیران و</h2>
                 <h2>صاحبان کسب‌ و کار</h2>
               </div>

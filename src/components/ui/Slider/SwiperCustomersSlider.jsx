@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css/navigation";
 
 export default function SwiperCustomersSlider({ items }) {
@@ -8,8 +8,12 @@ export default function SwiperCustomersSlider({ items }) {
     <div className="">
       <Swiper
         slidesPerView={1}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         navigation
+        autoplay={{
+          delay: 3000, 
+          disableOnInteraction: false, 
+        }}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -27,13 +31,12 @@ export default function SwiperCustomersSlider({ items }) {
           <SwiperSlide key={item.id}>
             <div className="relative flex justify-center h-auto">
               {/* <div className="flex flex-col gap-4"> */}
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-fit object-cove"
-                />
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-[30%] lg:w-[50%] object-cove"
+              />
 
-        
               {/* </div> */}
             </div>
           </SwiperSlide>

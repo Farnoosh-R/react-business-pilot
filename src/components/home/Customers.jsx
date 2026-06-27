@@ -1,9 +1,12 @@
 import SwiperCustomersSlider from "../ui/Slider/SwiperCustomersSlider";
-import customer1 from "../../../src/assets/images/layout/customer1.png"
-import customer2 from "../../../src/assets/images/layout/customer2.png"
-import customer3 from "../../../src/assets/images/layout/customer3.png"
-import customer4 from "../../../src/assets/images/layout/customer4.png"
-import customer5 from "../../../src/assets/images/layout/customer5.png"
+import customer1 from "../../../src/assets/images/layout/customer1.jpg"
+import customer2 from "../../../src/assets/images/layout/customer2.jpg"
+import customer3 from "../../../src/assets/images/layout/customer3.jpg"
+import customer4 from "../../../src/assets/images/layout/customer4.jpg"
+import customer5 from "../../../src/assets/images/layout/customer5.jpg"
+import customer6 from "../../../src/assets/images/layout/customer6.jpg"
+import customer7 from "../../../src/assets/images/layout/customer7.jpg"
+import customer8 from "../../../src/assets/images/layout/customer8.jpg"
 
 const Customers = () => {
   const slides = [
@@ -29,7 +32,15 @@ const Customers = () => {
     },
         {
       id: 1,
-      image: customer5,
+      image: customer6,
+    },
+          {
+      id: 1,
+      image: customer7,
+    },
+          {
+      id: 1,
+      image: customer8,
     },
   ];
   return (

@@ -86,7 +86,7 @@ const Contact = () => {
             <div className="text-[var(--text-secondary)]">
               ازتباط با من
             </div>
-            <div className="flex flex-col gap-2 mb-4">
+            <div className="flex flex-col mb-4">
               <h1 className="text-[var(--text-primary-alt)]">در مسیر شد</h1>
               <h1 className="text-[var(--text-primary-alt)]">کنار شما هستم</h1>
             </div>

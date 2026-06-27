@@ -14,11 +14,12 @@ const About = () => {
     <div id="about" className="page flex flex-col gap-20">
       <div className="app-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 justify-between">
-          <div className="flex flex-col gap-6 scroll-anim" style={{ "--from": "translateX(40px)" }}>
+          <div
+            className="flex flex-col gap-6 scroll-anim"
+            style={{ "--from": "translateX(40px)" }}
+          >
             <div>
-              <div className="text-[var(--text-secondary)]">
-                امیرعلی قربانی
-              </div>
+              <div className="text-[var(--text-secondary)]">امیرعلی قربانی</div>
               <h1 className="text-[var(--text-primary-alt)]">درباره من</h1>
             </div>
             <p className="leading-12 text-justify">
@@ -32,7 +33,7 @@ const About = () => {
               مجموعه‌ای که در آن فعالیت می‌کنم ایجاد کنم.
             </p>
 
-            <div className="flex justify-center gap-18">
+            <div className="flex justify-center gap-4 lg:gap-18">
               <div className="flex flex-col gap-4 items-center">
                 <FaChartLine color="var(--text-secondary)" size={35} />
                 <span className="font-bold">استراتژی های داده محور</span>
@@ -52,8 +53,11 @@ const About = () => {
               </Button>
             </div>
           </div>
-          <div className="relative scroll-anim" style={{ "--from": "translateX(-40px)" }}>
-            <img className="-z-10" src={aboutpic} alt="" />
+          <div
+            className="relative scroll-anim"
+            style={{ "--from": "translateX(-40px)" }}
+          >
+            <img className="-z-10" src={aboutMe} alt="" />
             <SquareDecorationBig
               style={{
                 bottom: "50px",
@@ -72,7 +76,10 @@ const About = () => {
       </div>
       <div className="bg-[var(--brand-primary)] py-10">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 place-items-center">
-          <div className="flex gap-2 items-center scroll-anim" style={{ "--from": "translateX(40px)" }}>
+          <div
+            className="flex gap-2 items-center scroll-anim"
+            style={{ "--from": "translateX(40px)" }}
+          >
             <div className="w-16 h-16 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center">
               <FaBullseye
                 className="text-[var(--text-secondary)] text-xl"
@@ -86,7 +93,10 @@ const About = () => {
               </span>
             </div>
           </div>
-          <div className="flex gap-3 items-center scroll-anim" style={{ "--from": "translateX(80px)" }}>
+          <div
+            className="flex gap-3 items-center scroll-anim"
+            style={{ "--from": "translateX(80px)" }}
+          >
             <div className="w-16 h-16 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center">
               <FaUsers
                 className="text-[var(--text-secondary)] text-xl"
@@ -100,7 +110,10 @@ const About = () => {
               </span>
             </div>
           </div>
-          <div className="flex gap-3 items-center scroll-anim" style={{ "--from": "translateX(120px)" }}>
+          <div
+            className="flex gap-3 items-center scroll-anim"
+            style={{ "--from": "translateX(120px)" }}
+          >
             <div className="w-16 h-16 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center">
               <FaHandshake
                 className="text-[var(--text-secondary)] text-xl"
@@ -110,11 +123,14 @@ const About = () => {
             <div className="flex flex-col text-white">
               <h2>250+</h2>
               <span className="text-lg text-[var(--text-muted)]">
-                جلسه برگزار شده
+                جلسه موفق
               </span>
             </div>
           </div>
-          <div className="flex gap-3 items-center scroll-anim" style={{ "--from": "translateX(160px)" }}>
+          <div
+            className="flex gap-3 items-center scroll-anim"
+            style={{ "--from": "translateX(160px)" }}
+          >
             <div className="w-16 h-16 p-2 rounded-full bg-white/10 backdrop-blur-md border border-white/10 flex items-center justify-center">
               <FaAward
                 className="text-[var(--text-secondary)] text-xl"
@@ -133,13 +149,11 @@ const About = () => {
       <div className="app-container">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
           <div>
-            <img src={aboutMe} alt="" />
+            <img src={aboutpic} alt="" />
           </div>
           <div className="flex flex-col gap-7">
             <div>
-              <div className="text-[var(--text-secondary)]">
-                تجربه
-              </div>
+              <div className="text-[var(--text-secondary)]">تجربه</div>
               <h1 className="text-[var(--text-primary-alt)]">
                 سفری در مسیر رشد
               </h1>
@@ -149,7 +163,7 @@ const About = () => {
               و کار ها کمک کرده ام تا مسیر موفقیت را سریع تر طی کنند.
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-5">
-              <div className="flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
+              <div className="w-full flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
                 <h2 className="text-[var(--text-secondary)]">1392</h2>
                 <div className="flex flex-col gap-2">
                   <h6>شروع فعالیت</h6>
@@ -158,7 +172,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
+              <div className="w-full flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
                 <h2 className="text-[var(--text-secondary)]">1395</h2>
                 <div className="flex flex-col gap-2">
                   <h6>توسعه تیم و خدمات</h6>
@@ -167,7 +181,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 p-5 border bg-[var(--brand-primary)] border-[var(--border)] shadow-lg rounded-3xl">
+              <div className="w-full flex flex-col gap-3 p-5 border bg-[var(--brand-primary)] border-[var(--border)] shadow-lg rounded-3xl">
                 <h2 className="text-[var(--text-secondary)]">1398</h2>
                 <div className="flex flex-col gap-2 text-white">
                   <h6>رشد و اثرگذاری بیشتر</h6>
@@ -176,7 +190,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
+              <div className="w-full flex flex-col gap-3 p-5 border border-[var(--border)] shadow-lg rounded-3xl">
                 <h2 className="text-[var(--text-secondary)]">1402</h2>
                 <div className="flex flex-col gap-2">
                   <h6>اعتماد و موفقیت پایدار</h6>

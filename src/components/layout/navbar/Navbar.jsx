@@ -19,10 +19,6 @@ const menuData = [
     label: "درباره من",
     path: "/about",
   },
-  //     {
-  //   label: "مطالعات",
-  //   path: "/blog",
-  // },
     {
     label: "مقالات",
     path: "/blog",
@@ -31,66 +27,6 @@ const menuData = [
     label: "تماس با ما",
     path: "/contact",
   },
-  // {
-  //   label: "اقامت",
-  //   children: [
-  //     {
-  //       label: "هتل ها",
-  //       path: "hotels",
-  //     },
-  //     {
-  //       label: "ویلا و اقامتگاه",
-  //       path: "villas and residences",
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: "تورهای خارجی",
-  //   children: [
-  //     {
-  //       label: "تورهای اروپایی",
-  //       children: [
-  //         {
-  //           label: "تور انگلیس",
-  //           path: "england",
-  //         },
-  //         {
-  //           label: "تور ترکیه",
-  //           path: "turkish",
-  //         },
-  //         {
-  //           label: "تور اسپانیا",
-  //           path: "espain",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       label: "تورهای خاورمیانه",
-  //       children: [
-  //         {
-  //           label: "تور امارات",
-  //           path: "emirates",
-  //         },
-  //         {
-  //           label: "تور کشتی کروز خلیج فارس",
-  //           path: "persian gulf cruise ship",
-  //         },
-  //         {
-  //           label: "تور عمان",
-  //           path: "oman",
-  //         },
-  //         {
-  //           label: "تور قطر",
-  //           path: "qatar",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       label: "تورهای آمریکا",
-  //       path: "america",
-  //     },
-  //   ],
-  // },
 ];
 
 const Navbar = () => {
@@ -103,10 +39,10 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/">
           <div className="flex">
-            <img src={logo} className="w-12" />
+            <img src={logo} className="w-8 lg:w-12" />
             <div className="flex flex-col">
-              <span className="font-bold">امیرعلی قربانی</span>
-              <span className="text-sm text-[var(--text-secondary)]">مشاور توسعه کسب و کار</span>
+              <span className="font-bold text-[11px] lg:text-[14px]">امیرعلی قربانی</span>
+              <span className="text-sm text-[10px] lg:text-[14px] text-[var(--text-secondary)]">مشاور توسعه کسب و کار</span>
             </div>
           </div>
         </Link>
@@ -138,7 +74,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <Button variant="primary">
+        <Button variant="primary" >
           <FaRegLightbulb style={{ marginLeft: "5px" }} />
           رزرو جلسه مشاوره
         </Button>

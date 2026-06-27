@@ -1,10 +1,10 @@
 import Button from "../ui/Button/Button";
-import traveller from "../../../src/assets/images/layout/traveller.webp";
 import decore from "../../../src/assets/images/layout/decore.png";
 import { FaPlay } from "react-icons/fa";
 import { FaBullseye } from "react-icons/fa";
 import { FaChartLine } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import aboutme from "../../assets/images/layout/aboutme.webp";
 
 const Header = () => {
   return (
@@ -16,8 +16,8 @@ const Header = () => {
         <div className="relative">
           <img
             className="lg:absolute lg:-right-37 w-full h-full object-cover lg:w-[700px] max-w-none rounded-tl-[200px]"
-            src={traveller}
-            alt="traveller"
+            src={aboutme}
+            alt="aboutme"
           />
         </div>
 
@@ -25,7 +25,7 @@ const Header = () => {
           <h5 className="text-[var(--brand-secondary)]">
             مسیر رشد کسب و کار شما، با استراتژی درست آغاز می شود
           </h5>
-          <div className="flex flex-col gap-4 text-[var(--brand-primary)]">
+          <div className="flex flex-col text-[var(--brand-primary)]">
             <h1>کمک می کنم کسب و کار شما</h1>
             <h1>هوشمندانه رشد کند</h1>
           </div>

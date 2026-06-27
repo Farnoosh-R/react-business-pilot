@@ -37,7 +37,7 @@ const Services = () => {
           <Button to={'/contact'} variant="secondary" btnType="outline" size="lg">
             رزور جلسه مشاوره
           </Button>
-          <div className="text-4xl text-white tracking-[10px] font-bold">
+          <div className="text-xl lg:text-4xl text-white tracking-[10px] font-bold">
             9876543 - 0912
           </div>
         </div>
@@ -115,10 +115,10 @@ const Services = () => {
           <div className="app-container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 place-items-center">
               <div className="bg-white/10 backdrop-blur-xl border p-4 border-white/20 rounded-2xl">
-                <h2 className="text-white tracking-[15px]">9876543 - 0912</h2>
+                <h2 className="text-white tracking-[10px] lg:tracking-[15px]">9876543 - 0912</h2>
               </div>
               <div className="bg-white/10 backdrop-blur-xl border p-4 border-white/20 rounded-2xl">
-                <div className="text-white text-[30px] font-light tracking-[15px]">
+                <div className="text-white text-[15px] lg:text-[30px] font-light tracking-[10px] lg:tracking-[15px]">
                   ghorbani@gmail.com
                 </div>
               </div>
